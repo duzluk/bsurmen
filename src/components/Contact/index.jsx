@@ -2,7 +2,12 @@ import React from "react";
 import Form from "../common/form";
 
 const Contact = () => {
-  return <Form />;
+  return (
+    <>
+      Contact Page
+      <Form />
+    </>
+  );
 };
 
 export default Contact;

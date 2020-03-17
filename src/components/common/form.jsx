@@ -1,7 +1,7 @@
 import React from "react";
+import { Form } from "react-bootstrap";
 
-
-const Form = () => {
+const contactForm = () => {
   return (
     <Form>
       <Form.Group controlId="exampleForm.ControlInput1">
@@ -36,4 +36,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default contactForm;

@@ -1,36 +1,25 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Home from "./components/Home";
-import Working from "./components/Home/homePageWorking";
-import NavBar from "./components/common/navBar";
-import { Container, Row, Col } from "react-bootstrap";
+import About from "./components/About";
+import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
 import Contact from "./components/Contact";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Container fluid>
-          <Row>
-            <NavBar />
-            <Col xd={5}>
-              <Home />
-            </Col>
-            <Col md={6} xs={12}>
-              <Working />
-            </Col>
-          </Row>
-        </Container>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/contact">
-            <Contact />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/resume" component={Resume} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/not-found" component={NotFound} />
+        <Redirect to="/not-found" />
+      </Switch>
+    </div>
   );
 }
 

@@ -1,5 +1,20 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: #FFC86B !important;
 }
+
+div[class="row"] {
+  outline: 1px dotted rgba(0, 0, 0, 0.25);
+}
+
+div[class^="col-"] {
+  background-color: rgba(255, 0, 0, 0.2);
+  outline: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+.navBarLeft {
+  background: #2F292D;
+}
+

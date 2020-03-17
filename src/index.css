@@ -1,8 +1,9 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #FFC86B !important;
+  background: #ffc86b !important;
 }
 
 div[class="row"] {
@@ -13,8 +14,3 @@ div[class^="col-"] {
   background-color: rgba(255, 0, 0, 0.2);
   outline: 1px dotted rgba(0, 0, 0, 0.5);
 }
-
-.navBarLeft {
-  background: #2F292D;
-}
-

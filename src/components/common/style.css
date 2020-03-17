@@ -1,4 +1,9 @@
+.navBarLeft,
+.navBarLeft i {
+  background: #2f292d;
+  color: #ffc86b;
+}
 
 i {
-  color: #FFC86B;
+  color: #2f292d;
 }

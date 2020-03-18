@@ -48,12 +48,18 @@ class Home extends React.Component {
                   Front end web application developer
                 </h1>
                 <h3 style={{ fontWeight: "lighter" }}>Based in Istanbul</h3>
-                <i className="fab fa-github"></i>
-                <i className="fab fa-linkedin"></i>
-                <i className="fab fa-medium"></i>
+                <a href="https://github.com/bsurmen">
+                  <img src="/assets/Github.svg" />
+                </a>
+                <a href="https://www.linkedin.com/in/bsurmen/">
+                  <img src="/assets/LinkedIN.svg" />
+                </a>
+                <a href="https://medium.com/@bsurmen">
+                  <img src="/assets/Medium.svg" />
+                </a>
               </div>
             </Col>
-            <Col lg={6} xs={12}>
+            <Col lg={6} xs={11}>
               <Working />
             </Col>
           </Row>

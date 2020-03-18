@@ -4,14 +4,18 @@ import Tabs from "../common/tabs";
 import BackArrow from "../common/backArrow";
 import Education from "./education";
 import Technical from "./technical";
+import NavBar from "./../common/navBar";
 
 const Resume = props => {
   return (
     <Container fluid>
-      <h1>Resume Page</h1>
-      <BackArrow />
       <Row>
+        <NavBar />
         <Col>
+          <Row>
+            <h1>Resume Page</h1>
+            <BackArrow />
+          </Row>
           <Tabs
             tabName1="Education"
             tabName2="Technical Skills"

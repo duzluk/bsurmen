@@ -2,6 +2,10 @@
   background: #2f292d;
   color: #ffc86b;
 }
+.navBarLeft{
+  height: 100vh;
+}
+
 
 i {
   color: #2f292d;

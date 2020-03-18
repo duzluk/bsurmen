@@ -2,12 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import BackArrow from "../common/backArrow";
 import AboutImage from "./aboutImage";
+import NavBar from "./../common/navBar";
 import "./style.css";
 
 const About = () => {
   return (
     <Container fluid>
       <Row>
+        <NavBar />
         <Col xs={12} md={6}>
           <h1>About Page</h1>
 
@@ -21,7 +23,7 @@ const About = () => {
           </p>
         </Col>
 
-        <Col xs={12} md={6}>
+        <Col xs={12} md={5}>
           <AboutImage />
         </Col>
       </Row>

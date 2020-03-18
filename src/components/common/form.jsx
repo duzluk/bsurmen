@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Row, Col } from "react-bootstrap";
+import { Form, Row, Col, Button } from "react-bootstrap";
 
 const contactForm = () => {
   return (
@@ -10,12 +10,12 @@ const contactForm = () => {
         <Row>
           <Col>
             <Form.Label>What is your name?</Form.Label>
-            <Form.Control />
+            <Form.Control className="input" />
           </Col>
           <Col>
             <Form.Group controlId="exampleForm.ControlInput1">
               <Form.Label>Your email</Form.Label>
-              <Form.Control type="email" />
+              <Form.Control type="email" className="input" />
             </Form.Group>
           </Col>
         </Row>
@@ -39,19 +39,23 @@ const contactForm = () => {
         <Row>
           <Col>
             <Form.Label>What is your timeframe?</Form.Label>
-            <Form.Control />
+            <Form.Control className="input" />
           </Col>
           <Col>
             <Form.Group controlId="exampleForm.ControlInput1">
               <Form.Label>Estimated budget?</Form.Label>
-              <Form.Control type="number" />
+              <Form.Control type="number" className="input" />
             </Form.Group>
           </Col>
         </Row>
         <Form.Group controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Example textarea</Form.Label>
-          <Form.Control as="textarea" rows="3" />
+          <Form.Label>Add quick message here</Form.Label>
+          <Form.Control as="textarea" rows="3" className="input" />
         </Form.Group>
+        <Button variant="primary" type="submit">
+          Send it
+        </Button>
+        <Form.Label>Are you done? Click the button!</Form.Label>
       </Form>
     </React.Fragment>
   );

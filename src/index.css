@@ -4,6 +4,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: #ffc86b !important;
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
 }
 
 div[class="row"] {

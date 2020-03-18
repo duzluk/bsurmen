@@ -7,3 +7,10 @@
 i {
   color: #2f292d;
 }
+
+.input {
+  background: #ffc86b !important;
+  border: none !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid black !important;
+}

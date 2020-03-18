@@ -1,11 +1,32 @@
 import React from "react";
-import Cards from "../common/card";
+import { Container, Row, Col } from "react-bootstrap";
+import LogoCard from "../common/logoCard";
 
-const Technical = () => {
-  return (<React.Fragment>
-  <Cards src="/assets/logo/js.png"/>
-  <Cards src="/assets/logo/dart.png"/>
-  </React.Fragment>);
+const Technical = (props) => {
+  const src = [
+    "/assets/logo/js.png",
+    "/assets/logo/dart.png",
+    "/assets/logo/react.png",
+    "/assets/logo/flutter.png",
+    "/assets/logo/html.png",
+    "/assets/logo/css.png",
+    "/assets/logo/git.png",
+    "/assets/logo/firebase.png",
+    "/assets/logo/figma.png",
+    "/assets/logo/xd.png",
+    "/assets/logo/photoshop.png",
+    "/assets/logo/illustrator.png",
+    "/assets/logo/rhino.png"
+  ];
+  return (
+    <React.Fragment>
+      <Row>
+        {src.map((e,i) => (
+          <LogoCard src={src[i]} />
+        ))}
+      </Row>
+    </React.Fragment>
+  );
 };
 
 export default Technical;

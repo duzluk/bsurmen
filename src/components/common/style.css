@@ -1,5 +1,4 @@
-.navBarLeft,
-.navBarLeft i {
+.navBarLeft, .navBarLeft i {
   background: #2f292d;
   color: #ffc86b;
 }
@@ -13,4 +12,30 @@ i {
   border: none !important;
   border-radius: 0 !important;
   border-bottom: 1px solid black !important;
+}
+
+.logoCard {
+  background: #ffc86b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 120px;
+  height: 120px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 0 15px 15px 15px;
+}
+
+.logoCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logoCard img {
+  height: 80px;
+  filter: gray;
+  -webkit-filter: grayscale(1);
+}
+
+.logoCard img:hover{
+    filter: none;
+ 
 }

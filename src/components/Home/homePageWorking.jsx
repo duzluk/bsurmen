@@ -30,14 +30,7 @@ const Working = () => {
               fontSize="48"
               fontWeight="250"
               letterSpacing="0em"
-            >
-              <tspan x="0" y="44.6406">
-                RESUM
-              </tspan>
-              <tspan x="0" y="100.641">
-                E
-              </tspan>
-            </text>
+            ></text>
             <g id="Rectangle 8">
               <mask id="path-4-inside-1" fill="white">
                 <path d="M228 446.55C228 436.057 236.507 427.55 247 427.55H758.188C768.681 427.55 777.188 436.057 777.188 446.55V788.247C777.188 798.74 768.681 807.247 758.188 807.247H247C236.507 807.247 228 798.74 228 788.247V446.55Z" />

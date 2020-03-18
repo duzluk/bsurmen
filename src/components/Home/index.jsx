@@ -9,9 +9,11 @@ class Home extends React.Component {
     super(props);
     this.state = {
       x: 0,
-      y: 0
+      y: 0,
+    
     };
   }
+
   _onMouseMove = e => {
     const width = this.refs.titleContainer.clientWidth;
     const height = this.refs.titleContainer.clientHeight;

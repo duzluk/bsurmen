@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import LogoCard from "../common/logoCard";
+import LogoCard from "../common/customCard";
 
 const Technical = (props) => {
   const src = [
@@ -21,8 +21,8 @@ const Technical = (props) => {
   return (
     <React.Fragment>
       <Row>
-        {src.map((e,i) => (
-          <LogoCard src={src[i]} />
+        {src.map((e, i) => (
+          <LogoCard src={src[i]} classStyle="logoCard" onEnter={onEnter} />
         ))}
       </Row>
     </React.Fragment>
@@ -30,3 +30,9 @@ const Technical = (props) => {
 };
 
 export default Technical;
+
+const onEnter = () => {
+ console.log('fdsfasdfas');
+ 
+}
+ 

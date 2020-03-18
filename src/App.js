@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -7,9 +7,27 @@ import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 
-class App extends React.Component {
-  state = {};
-  render() {
+
+// function useHover() {
+//   const ref = useRef();
+//   const [hovered, setHovered] = useState(false);
+
+//   const enter = () => setHovered(true);
+//   const leave = () => setHovered(false);
+
+//   useEffect(() => {
+//     ref.current.addEventListener("mouseenter", enter);
+//     ref.current.addEventListener("mouseleave", leave);
+//     return () => {
+//       ref.current.removeEventListener("mouseenter", enter);
+//       ref.current.removeEventListener("mouseleave", leave);
+//     };
+//   }, [ref]);
+//   return [ref, hovered];
+// }
+
+const App = () => {
+ 
     return (
       <div>
         <Switch>
@@ -21,9 +39,9 @@ class App extends React.Component {
           <Route path="/not-found" component={NotFound} />
           <Redirect to="/not-found" />
         </Switch>
+       
       </div>
     );
-  }
 }
-
+ 
 export default App;

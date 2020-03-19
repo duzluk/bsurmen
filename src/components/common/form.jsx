@@ -3,6 +3,12 @@ import { Form, Row, Col, Button } from "react-bootstrap";
 import { Radio, RadioGroup } from "react-radio-group";
 
 const contactForm = ({
+  handleName,
+  handleMail,
+  handleTimeFrame,
+  handleBudget,
+  handleMsg,
+  handleRadio,
   handleForm,
   name,
   mail,
@@ -11,14 +17,29 @@ const contactForm = ({
   msg,
   radio
 }) => {
-  const handleOnChange = e => {};
-  const handleInput = event => {
-    handleForm(event.target.value);
-  };
 
+  const handleNameInput = event => {
+    handleName(event.target.value);
+  };
+  const handleMailInput = event => {
+    handleMail(event.target.value);
+  };
+  const handleTimeFrameInput = event => {
+    handleTimeFrame(event.target.value);
+  };
+  const handleBudgetInput = event => {
+    handleBudget(event.target.value);
+  };
+    const handleMsgInput = event => {
+      handleMsg(event.target.value);
+    };
+     const handleRadioInput = event => {
+       handleRadio(event);
+     };
   const handleSubmit = event => {
     event.preventDefault();
-    handleForm(event.target.value);
+
+    alert(`dsf`)
   };
 
   return (
@@ -33,7 +54,7 @@ const contactForm = ({
               className="input"
               name="name"
               value={name}
-              onChange={name => handleInput(name)}
+              onChange={name => handleNameInput(name)}
             />
           </Col>
           <Col>
@@ -44,7 +65,7 @@ const contactForm = ({
                 name="mail"
                 className="input"
                 value={mail}
-                onChange={mail => handleInput(mail)}
+                onChange={mail => handleMailInput(mail)}
               />
             </Form.Group>
           </Col>
@@ -53,11 +74,11 @@ const contactForm = ({
 
         <RadioGroup
           name="stage"
-          onChange={e => handleOnChange(e)}
+          onChange={e => handleRadioInput(e)}
           selectedValue={radio}
         >
           <div className="radio-button-background">
-            <Radio value={radio} className="radio-button" />
+            <Radio value="radio" className="radio-button" />
             Have product documentation or work in progress
           </div>
           <div className="radio-button-background">
@@ -73,7 +94,7 @@ const contactForm = ({
               className="input"
               name="timeFrame"
               value={timeFrame}
-              onChange={timeFrame => handleInput(timeFrame)}
+              onChange={timeFrame => handleTimeFrameInput(timeFrame)}
             />
           </Col>
           <Col>
@@ -83,7 +104,7 @@ const contactForm = ({
                 type="number"
                 className="input"
                 value={budget}
-                onChange={budget => handleInput(budget)}
+                onChange={budget => handleBudgetInput(budget)}
               />
             </Form.Group>
           </Col>
@@ -96,7 +117,7 @@ const contactForm = ({
             name="msg"
             className="input"
             value={msg}
-            onChange={msg => handleInput(msg)}
+            onChange={msg => handleMsgInput(msg)}
           />
         </Form.Group>
         <Button variant="primary" type="submit">

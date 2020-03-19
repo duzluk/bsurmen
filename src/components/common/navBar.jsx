@@ -19,7 +19,7 @@ const navBar = () => {
       </Nav.Link>
       <Nav.Link>
         <Link to="/resume">
-          <i class="fas fa-file-user"></i>
+          <i className="fas fa-file-user"></i>
         </Link>
       </Nav.Link>
 

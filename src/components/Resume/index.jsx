@@ -5,6 +5,7 @@ import BackArrow from "../common/backArrow";
 import Education from "./education";
 import Technical from "./technical";
 import NavBar from "./../common/navBar";
+import Employment from "./employment";
 
 const Resume = props => {
   return (
@@ -22,6 +23,7 @@ const Resume = props => {
             tabName3="Employment History"
             content1={<Education />}
             content2={<Technical />}
+            content3={<Employment />}
           />
         </Col>
       </Row>

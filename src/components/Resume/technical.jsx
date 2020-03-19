@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import LogoCard from "../common/customCard";
+import CustomCard from "../common/customCard";
 
 const Technical = props => {
   const src = [
@@ -24,7 +24,7 @@ const Technical = props => {
       <Row>
        
           {src.map((e, i) => (
-            <LogoCard src={src[i]} classStyle="logoCard" onEnter={onEnter} />
+            <CustomCard src={src[i]} classStyle="logoCard" onEnter={onEnter} />
           ))}
       
       </Row>

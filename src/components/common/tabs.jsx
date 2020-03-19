@@ -12,8 +12,8 @@ const Tabs = ({
   return (
     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
       <Row>
-        <Col sm={3}>
-          <Nav variant="pills" className="flex-column">
+        <Col sm={12} md={3}>
+          <Nav variant="pills" className="flex-column resume" >
             <Nav.Item>
               <Nav.Link eventKey="first">{tabName1}</Nav.Link>
             </Nav.Item>
@@ -25,7 +25,7 @@ const Tabs = ({
             </Nav.Item>
           </Nav>
         </Col>
-        <Col sm={9}>
+        <Col sm={12} md={9}>
           <Tab.Content>
             <Tab.Pane eventKey="first">{content1}</Tab.Pane>
             <Tab.Pane eventKey="second">{content2}</Tab.Pane>

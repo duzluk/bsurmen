@@ -61,7 +61,7 @@ class Home extends React.Component {
                 </a>
               </div>
             </Col>
-            <Col lg={6} xs={11}>
+            <Col md={6} xs={11}>
               <Working />
             </Col>
           </Row>

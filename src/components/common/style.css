@@ -1,11 +1,18 @@
-.navBarLeft, .navBarLeft i {
+.navBarLeft,
+.navBarLeft i {
   background: #2f292d;
   color: #ffc86b;
 }
 
-.navBarLeft {
-  height: 100vh;
+.navBarTop,
+.navBarTop i {
+  display: flex;
+  background: #2f292d;
+  color: #ffc86b;
+  overflow: auto;
+  width: 100%;
 }
+
 
 i {
   color: #2f292d;
@@ -76,7 +83,7 @@ i {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: #ffc86b;
 }
 
@@ -95,7 +102,7 @@ i {
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 .imgOverlayEdu {
@@ -105,7 +112,17 @@ i {
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+}
+
+.resume a,
+.resume a:focus,
+.resume a:hover {
+  color: #2f292d;
+}
+
+.resume a:hover {
+  color: gray;
 }
 
 .new-line {

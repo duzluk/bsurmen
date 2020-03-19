@@ -16,7 +16,7 @@ const Portfolio = props => {
 
   const data = [
     {
-      name: "Mentorship - Github | Demo",
+      name: "Mentorship",
       url: "/assets/mentees.png",
       web: "https://osamaakb.github.io/mentorship/",
       code: "https://github.com/bsurmen/mentorship",
@@ -29,7 +29,7 @@ const Portfolio = props => {
             + Fixed bugs that cause problem of the user experience.`
     },
     {
-      name: "Mentorship - Github | Demo",
+      name: "Mentorship",
       web: "https://osamaakb.github.io/mentorship/",
       code: "https://github.com/bsurmen/mentorship",
       url: "/assets/mentees.png",
@@ -42,7 +42,7 @@ const Portfolio = props => {
             + Fixed bugs that cause problem of the user experience.`
     },
     {
-      name: `Abbuloka - Github | Demo`,
+      name: `Abbuloka`,
       web: "https://abbuloka.netlify.com/",
       code: "https://github.com/bsurmen/abbulokapremium",
       url: "/assets/abbulokas.png",
@@ -56,6 +56,7 @@ const Portfolio = props => {
             + Created index page and footer through HTML5 and CSS3.`
     }
   ];
+  console.log(dataNum);
 
   return (
     <Container fluid>
@@ -71,7 +72,6 @@ const Portfolio = props => {
             {data.map((e, i) => (
               <PortCard
                 src={data[i].url}
-                text={data[i].text}
                 onClick={() => onEnter(i)}
                 classStyle="portfolio"
               />

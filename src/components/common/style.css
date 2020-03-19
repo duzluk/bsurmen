@@ -90,7 +90,17 @@ i {
 
 .imgOverlayStyle {
   margin: 0;
-  height: 30%;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.imgOverlayEdu {
+  margin: 0;
+  width: 30%;
   position: absolute;
   top: 50%;
   left: 50%;

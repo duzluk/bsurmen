@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import CustomCard from "../common/customCard";
 
 const Technical = props => {
@@ -24,7 +24,7 @@ const Technical = props => {
       <Row>
        
           {src.map((e, i) => (
-            <CustomCard src={src[i]} classStyle="logoCard" onEnter={onEnter} />
+            <CustomCard src={src[i]} classStyle="logoCard" />
           ))}
       
       </Row>
@@ -35,6 +35,4 @@ const Technical = props => {
 
 export default Technical;
 
-const onEnter = () => {
-  console.log("fdsfasdfas");
-};
+

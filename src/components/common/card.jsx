@@ -10,7 +10,6 @@ const Cards = ({ text, src }) => {
           <Card.Text>{text}</Card.Text>
         </Card.Body>
       </Card>
-      <br />
     </>
   );
 };

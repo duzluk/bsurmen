@@ -12,16 +12,17 @@ const navBar = () => {
         </Link>
       </Nav.Link>
       <Nav.Link>
-        <Link to="/resume">
-          <i className="fas fa-cog"></i>
-        </Link>
-      </Nav.Link>
-      <Nav.Link>
         <Link to="/portfolio">
           <i className="fas fa-chevron-left"></i>
           <i className="fas fa-chevron-right"></i>
         </Link>
       </Nav.Link>
+      <Nav.Link>
+        <Link to="/resume">
+          <i class="fas fa-file-user"></i>
+        </Link>
+      </Nav.Link>
+
       <Nav.Link>
         <Link to="/contact">
           <i className="fas fa-envelope"></i>

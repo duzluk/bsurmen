@@ -7,7 +7,6 @@ import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 
-
 // function useHover() {
 //   const ref = useRef();
 //   const [hovered, setHovered] = useState(false);
@@ -27,21 +26,19 @@ import NotFound from "./components/NotFound";
 // }
 
 const App = () => {
- 
-    return (
-      <div>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/resume" component={Resume} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/not-found" component={NotFound} />
-          <Redirect to="/not-found" />
-        </Switch>
-       
-      </div>
-    );
-}
- 
+  return (
+    <div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/resume" component={Resume} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/not-found" component={NotFound} />
+        <Redirect to="/not-found" />
+      </Switch>
+    </div>
+  );
+};
+
 export default App;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PropTypes } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import CustomModal from "../common/modal";
 import BackArrow from "../common/backArrow";
@@ -16,43 +16,44 @@ const Portfolio = props => {
 
   const data = [
     {
-      id: 1,
-      name: "Client Project",
+      name: "Mentorship - Github | Demo",
       url: "/assets/mentees.png",
-      text: `Mentorship - Github | Demo 
-            Brings mentors and mentees together to learn and teach each other.
+      web: "https://osamaakb.github.io/mentorship/",
+      code: "https://github.com/bsurmen/mentorship",
+      text: `Brings mentors and mentees together to learn and teach each other.\n
              + Implemented HTML5, CSS3 and Materialize to structure the
-            home page and info modal.
-              + Explored Firestore to create database.
+            home page and info modal.\n
+              + Explored Firestore to create database.\n
              + Completed data fetching part to render user information on
-            the page.
+            the page.\n
             + Fixed bugs that cause problem of the user experience.`
     },
     {
-      id: 1,
-      name: "Mentees & Mentors",
+      name: "Mentorship - Github | Demo",
+      web: "https://osamaakb.github.io/mentorship/",
+      code: "https://github.com/bsurmen/mentorship",
       url: "/assets/mentees.png",
-      text: `Mentorship - Github | Demo 
-            Brings mentors and mentees together to learn and teach each other.
+      text: `Brings mentors and mentees together to learn and teach each other.\n
              + Implemented HTML5, CSS3 and Materialize to structure the
-            home page and info modal.
-              + Explored Firestore to create database.
+            home page and info modal.\n
+              + Explored Firestore to create database.\n
              + Completed data fetching part to render user information on
-            the page.
+            the page.\n
             + Fixed bugs that cause problem of the user experience.`
     },
     {
-      id: 3,
-      name: "Abbuloka",
-      url: "/assets/abbuloka.png",
-      text: `Abbuloka - Github | Demo 
-            An e-commercial website that promotes and sells the Bennu rocks
+      name: `Abbuloka - Github | Demo`,
+      web: "https://abbuloka.netlify.com/",
+      code: "https://github.com/bsurmen/abbulokapremium",
+      url: "/assets/abbulokas.png",
+      text: `An e-commercial website that promotes and sells the Bennu rocks
             pieces to the people. (This is the first exercise project under web
             development Bootcamp as a team. Only HTML and CSS used in the
-            project.)+ Devised the project idea and designed UI. +
-            Utilized Bootstrap 4 to create responsive page for use on different
-            size of screens.  + Created index page and footer through
-            HTML5 and CSS3.`
+            project.)\n
+            + Devised the project idea and designed UI.\n
+            +Utilized Bootstrap 4 to create responsive page for use on different
+            size of screens.\n
+            + Created index page and footer through HTML5 and CSS3.`
     }
   ];
 
@@ -64,18 +65,23 @@ const Portfolio = props => {
           <Row>
             <h1>Portfolio Page</h1>
             <BackArrow />
+          </Row>
 
+          <Row>
             {data.map((e, i) => (
               <PortCard
                 src={data[i].url}
                 text={data[i].text}
-                onClick={() => onEnter(igit )}
+                onClick={() => onEnter(i)}
+                classStyle="portfolio"
               />
             ))}
 
             <CustomModal
               show={modalShow}
               onHide={() => setModalShow(false)}
+              onWeb={data[dataNum].web}
+              onCode={data[dataNum].code}
               img={data[dataNum].url}
               text={data[dataNum].text}
               title={data[dataNum].name}

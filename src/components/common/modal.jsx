@@ -11,17 +11,16 @@ export default function customModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-         {props.title}
+          {props.title}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <img src={props.img}/>
-        <p>
-         {props.text}
-        </p>
+        <img src={props.img} />
+        <p className="new-line ">{props.text}</p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
+        <Button href={props.onCode}>Github</Button>
+        <Button href={props.onWeb}>Demo</Button>
       </Modal.Footer>
     </Modal>
   );

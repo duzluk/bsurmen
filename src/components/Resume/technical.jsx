@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LogoCard from "../common/customCard";
 
-const Technical = (props) => {
+const Technical = props => {
   const src = [
     "/assets/logo/js.png",
     "/assets/logo/dart.png",
@@ -20,11 +20,15 @@ const Technical = (props) => {
   ];
   return (
     <React.Fragment>
+     <Col xs={8}>
       <Row>
-        {src.map((e, i) => (
-          <LogoCard src={src[i]} classStyle="logoCard" onEnter={onEnter} />
-        ))}
+       
+          {src.map((e, i) => (
+            <LogoCard src={src[i]} classStyle="logoCard" onEnter={onEnter} />
+          ))}
+      
       </Row>
+        </Col>
     </React.Fragment>
   );
 };
@@ -32,7 +36,5 @@ const Technical = (props) => {
 export default Technical;
 
 const onEnter = () => {
- console.log('fdsfasdfas');
- 
-}
- 
+  console.log("fdsfasdfas");
+};

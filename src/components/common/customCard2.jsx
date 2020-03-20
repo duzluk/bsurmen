@@ -12,7 +12,6 @@ const CustomCard2 = ({
   return (
     <React.Fragment>
       <div className={classStyle} onMouseEnter={onEnter} onClick={onClick}>
-        <img src={src} />
         <p>{text}</p>
         <div className="overlay">
           <img src={srcOverlay} className={imgOverlayStyle}/>

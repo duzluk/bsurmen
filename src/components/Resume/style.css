@@ -1,4 +1,3 @@
-
 .logoCard {
   background: #ffc86b;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -23,7 +22,6 @@
 .logoCard img:hover {
   filter: none;
 }
-
 
 .empCard:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -70,14 +68,15 @@
   transform: translate(-50%, -50%);
 }
 
-.resume a,
-.resume a:focus,
-.resume a:hover {
-  color: #2f292d;
+.resume .nav-link:hover {
+  color: #ffc86b !important;
+  background-color: #2f292d !important;
+  border-color: white !important;
 }
 
-.resume a:hover {
-  color: gray;
+.resume .nav-link {
+  background-color: #ffc86b !important;
+  color: #2f292d !important;
 }
 
 .empCard {
@@ -87,4 +86,10 @@
   margin-bottom: 2rem;
   padding: 1rem;
   border-radius: 10px;
+}
+
+.modal .btn-primary {
+  color: #ffc86b !important;
+  background-color: #2f292d !important;
+  border-color: white !important;
 }

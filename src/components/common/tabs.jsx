@@ -9,27 +9,27 @@ const Tabs = ({
   content2,
   content3
 }) => {
+  const options = ["first", "second", "third"];
+  const tabs = [tabName1, tabName2, tabName3];
+  const contents = [content1, content2, content3];
+
   return (
-    <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+    <Tab.Container id="left-tabs-example" defaultActiveKey="first" bsStyle="danger" bsClass="custom-btn">
       <Row>
         <Col sm={12} md={3}>
-          <Nav variant="pills" className="flex-column resume" >
-            <Nav.Item>
-              <Nav.Link eventKey="first">{tabName1}</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="second">{tabName2}</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="third">{tabName3}</Nav.Link>
-            </Nav.Item>
+          <Nav variant="pills" className="flex-column">
+            {options.map((e, i) => (
+              <Nav.Item className="resume">
+                <Nav.Link eventKey={options[i]}>{tabs[i]}</Nav.Link>
+              </Nav.Item>
+            ))}
           </Nav>
         </Col>
         <Col sm={12} md={9}>
           <Tab.Content>
-            <Tab.Pane eventKey="first">{content1}</Tab.Pane>
-            <Tab.Pane eventKey="second">{content2}</Tab.Pane>
-            <Tab.Pane eventKey="third">{content3}</Tab.Pane>
+            {options.map((e, i) => (
+              <Tab.Pane eventKey={options[i]}  unmountOnExit={true}>{contents[i]}</Tab.Pane>
+            ))}
           </Tab.Content>
         </Col>
       </Row>

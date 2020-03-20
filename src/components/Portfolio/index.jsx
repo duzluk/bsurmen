@@ -17,7 +17,7 @@ const Portfolio = props => {
 
   const data = [
     {
-      name: "Mentorship",
+      name: "Client Project",
       url: "/assets/mentees.png",
       web: "https://osamaakb.github.io/mentorship/",
       code: "https://github.com/bsurmen/mentorship",
@@ -30,7 +30,7 @@ const Portfolio = props => {
             + Fixed bugs that cause problem of the user experience.`
     },
     {
-      name: "Mentorship",
+      name: "Mentees and Mentors",
       web: "https://osamaakb.github.io/mentorship/",
       code: "https://github.com/bsurmen/mentorship",
       url: "/assets/mentees.png",
@@ -61,7 +61,7 @@ const Portfolio = props => {
   return (
     <Container fluid>
       <Row>
-        <NavBar />
+          <NavBar />
         <Col>
           <Row>
             {data.map((e, i) => (

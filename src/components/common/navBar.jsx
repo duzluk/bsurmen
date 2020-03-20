@@ -22,32 +22,26 @@ class Navbar extends React.Component {
         ? "flex-column navBarLeft navBarLeftAlign"
         : "justify-content-center navBarTop";
     return (
-     
+      <div className="wrapper">
         <Nav defaultActiveKey="/" className={classNav}>
-          <Nav.Link>
-            <Link to="/about">
-              <i className="fas fa-user"></i>
-            </Link>
-          </Nav.Link>
-          <Nav.Link>
-            <Link to="/portfolio" className="navBarTop">
-              <i className="fas fa-chevron-left"></i>
-              <i className="fas fa-chevron-right"></i>
-            </Link>
-          </Nav.Link>
-          <Nav.Link>
-            <Link to="/resume">
-              <i className="fas fa-file-user"></i>
-            </Link>
-          </Nav.Link>
+          <Link to="/about">
+            <i className="fas fa-user"></i>
+          </Link>
 
-          <Nav.Link>
-            <Link to="/contact">
-              <i className="fas fa-envelope"></i>
-            </Link>
-          </Nav.Link>
+          <Link to="/portfolio" className="navBarTop">
+            <i className="fas fa-chevron-left"></i>
+            <i className="fas fa-chevron-right"></i>
+          </Link>
+
+          <Link to="/resume">
+            <i className="fas fa-file-user"></i>
+          </Link>
+
+          <Link to="/contact">
+            <i className="fas fa-envelope"></i>
+          </Link>
         </Nav>
-    
+      </div>
     );
   }
 }

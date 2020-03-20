@@ -1,30 +1,54 @@
-.navBarLeft,
+.new-line {
+  white-space: pre-line;
+}
+
+/*-------nav -------*/
+
+a.nav-link {
+  padding: 16px 20px !important;
+}
+
 .navBarLeft i {
   background: #2f292d;
   color: #ffc86b;
 }
 
-.navBarTop,
-.navBarTop i {
+.navBarLeft {
+  height: 100%;
+  background: #2f292d;
+  color: #ffc86b;
+}
+
+.navBarLeft a {
+  padding: 15px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.wrapper .nav {
+  padding-top: 74vh;
+}
+
+/* .navBarTop, .navBarTop i {
   display: flex;
   background: #2f292d;
   color: #ffc86b;
   overflow: auto;
   width: 100%;
-}
-
+} */
 
 i {
   color: #2f292d;
 }
+
+/*----- form ------*/
 
 .input {
   background: #ffc86b !important;
   border: none !important;
   border-radius: 0 !important;
   border-bottom: 1px solid black !important;
-}
-
-.new-line {
-  white-space: pre-line;
 }

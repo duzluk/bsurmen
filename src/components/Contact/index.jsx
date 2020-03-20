@@ -4,6 +4,7 @@ import Form from "../common/form";
 import BackArrow from "../common/backArrow";
 import ContactImage from "./contactImage";
 import NavBar from "./../common/navBar";
+import "./style.css";
 
 class Contact extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class Contact extends Component {
       timeFrame: "",
       budget: 0,
       msg: "",
-      radio: ''
+      radio: ""
     };
   }
 
@@ -50,7 +51,7 @@ class Contact extends Component {
   };
   render() {
     return (
-      <Container fluid>
+      <Container fluid className="wrapper">
         <Row>
           <NavBar />
 

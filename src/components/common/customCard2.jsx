@@ -1,20 +1,25 @@
 import React from "react";
 
-const CustomCard = ({
+const CustomCard2 = ({
   src,
   classStyle,
   onEnter,
   onClick,
-  text
+  text,
+  srcOverlay,
+  imgOverlayStyle
 }) => {
   return (
     <React.Fragment>
       <div className={classStyle} onMouseEnter={onEnter} onClick={onClick}>
         <img src={src} />
         <p>{text}</p>
+        <div className="overlay">
+          <img src={srcOverlay} className={imgOverlayStyle}/>
+        </div>
       </div>
     </React.Fragment>
   );
 };
 
-export default CustomCard;
+export default CustomCard2;

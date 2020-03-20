@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import EduCard from "../common/customCard";
+import EduCard from "../common/customCard2";
 
 const Education = () => {
   const eduData = [

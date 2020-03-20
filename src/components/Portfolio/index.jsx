@@ -4,6 +4,7 @@ import CustomModal from "../common/modal";
 import BackArrow from "../common/backArrow";
 import NavBar from "./../common/navBar";
 import PortCard from "../common/customCard";
+import "./style.css";
 
 const Portfolio = props => {
   const [modalShow, setModalShow] = React.useState(false);
@@ -56,18 +57,12 @@ const Portfolio = props => {
             + Created index page and footer through HTML5 and CSS3.`
     }
   ];
-  console.log(dataNum);
 
   return (
     <Container fluid>
       <Row>
         <NavBar />
         <Col>
-          <Row>
-            <h1>Portfolio Page</h1>
-            <BackArrow />
-          </Row>
-
           <Row>
             {data.map((e, i) => (
               <PortCard
@@ -88,6 +83,10 @@ const Portfolio = props => {
             />
           </Row>
         </Col>
+        {/* <Row>
+          <h1>Portfolio Page</h1>
+          <BackArrow />
+        </Row> */}
       </Row>
     </Container>
   );

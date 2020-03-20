@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import EmpCard from "../common/customCard";
+import EmpCard from "../common/customCard2";
 
 const Employment = () => {
   const empData = [

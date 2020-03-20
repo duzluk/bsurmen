@@ -6,6 +6,7 @@ import Education from "./education";
 import Technical from "./technical";
 import NavBar from "./../common/navBar";
 import Employment from "./employment";
+import "./style.css";
 
 const Resume = props => {
   return (

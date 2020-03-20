@@ -1,8 +1,4 @@
-import React from "react";
-
-const Working = () => {
-  return (
-  <svg width="103%" height="100%" viewBox="0 0 991 964" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="991" height="964" viewBox="0 0 991 964" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="home">
 <path id="Rectangle 65" d="M0 965L8.46667e-07 894C1.04424e-06 877.431 13.4315 864 30 864L44 864L44 965L0 965Z" fill="white"/>
 <rect id="Rectangle 63" y="863" width="991" height="44" rx="22" fill="white"/>
@@ -110,8 +106,3 @@ const Working = () => {
 </g>
 </g>
 </svg>
-
-  );
-};
-
-export default Working;

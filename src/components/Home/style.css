@@ -1,7 +1,13 @@
+.home {
+  height: 100% !important;
+  padding: 20% 0;
+}
+
 .home i {
   color: #2f292d;
 }
-.home {
-  height: 100% !important;
-  padding: 30% 0;
+
+.home img {
+  width: 35px;
+  margin-right: 15px;
 }

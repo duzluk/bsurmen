@@ -9,8 +9,7 @@ class Home extends React.Component {
     super(props);
     this.state = {
       x: 0,
-      y: 0,
-    
+      y: 0
     };
   }
 
@@ -33,40 +32,52 @@ class Home extends React.Component {
       "--maskX": x,
       "--maskY": y
     };
+
+    const urlSocialMedia = [
+      "https://github.com/bsurmen",
+      "https://www.linkedin.com/in/bsurmen/",
+      "https://medium.com/@bsurmen"
+    ];
+
+    const pathSocialIcon = [
+      "/assets/Github.svg",
+      "/assets/LinkedIN.svg",
+      "/assets/Medium.svg"
+    ];
+
     return (
-      <div
-        className="titleContainer"
-        onMouseMove={this._onMouseMove}
-        ref="titleContainer"
-        style={maskStyle}
-      >
-        <Container fluid>
-          <Row className="home2">
-            <NavBar />
-            <Col>
-              <div className="home">
-                <h5 style={{ fontWeight: "regular" }}>Burak Sürmen</h5>
-                <h1 style={{ fontWeight: "bold" }}>
-                  Front end web application developer
-                </h1>
-                <h3 style={{ fontWeight: "lighter" }}>Based in Istanbul</h3>
-                <a href="https://github.com/bsurmen">
-                  <img src="/assets/Github.svg" />
+      // <div
+      //   className="titleContainer"
+      //   onMouseMove={this._onMouseMove}
+      //   ref="titleContainer"
+      //   style={maskStyle}
+      // >
+      <Container fluid>
+        <Row className="home2">
+          <NavBar />
+          <Col xs={12} md={5}>
+            <div className="home">
+              <h5 style={{ fontWeight: "400" }}>Burak Sürmen</h5>
+              <h1 style={{ fontWeight: "600" }}>
+                Front end web application developer
+              </h1>
+              <h3 style={{ fontWeight: "400", marginTop: "-8px" }}>
+                Based in Istanbul
+              </h3>
+
+              {urlSocialMedia.map((e, i) => (
+                <a href={urlSocialMedia[i]}>
+                  <img src={pathSocialIcon[i]} />
                 </a>
-                <a href="https://www.linkedin.com/in/bsurmen/">
-                  <img src="/assets/LinkedIN.svg" />
-                </a>
-                <a href="https://medium.com/@bsurmen">
-                  <img src="/assets/Medium.svg" />
-                </a>
-              </div>
-            </Col>
-            <Col md={6} xs={11}>
-              <Working />
-            </Col>
-          </Row>
-        </Container>
-      </div>
+              ))}
+            </div>
+          </Col>
+          <Col md={6} xs={12}>
+            <Working />
+          </Col>
+        </Row>
+      </Container>
+      // </div>
     );
   }
 }

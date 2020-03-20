@@ -27,63 +27,65 @@
 <g id="Group 27">
 <g id="desktop">
 <g id="Rectangle 8">
-<mask id="path-16-inside-1" fill="white">
+<mask id="path-15-inside-1" fill="white">
 <path d="M265 399C265 388.507 273.507 380 284 380H795.188C805.681 380 814.188 388.507 814.188 399V740.697C814.188 751.19 805.681 759.697 795.188 759.697H284C273.507 759.697 265 751.19 265 740.697V399Z"/>
 </mask>
-<path d="M265 399C265 388.507 273.507 380 284 380H795.188C805.681 380 814.188 388.507 814.188 399V740.697C814.188 751.19 805.681 759.697 795.188 759.697H284C273.507 759.697 265 751.19 265 740.697V399Z" fill="#2F292D" stroke="#2F292D" stroke-width="2" mask="url(#path-16-inside-1)"/>
+<path d="M265 399C265 388.507 273.507 380 284 380H795.188C805.681 380 814.188 388.507 814.188 399V740.697C814.188 751.19 805.681 759.697 795.188 759.697H284C273.507 759.697 265 751.19 265 740.697V399Z" fill="#2F292D" stroke="#2F292D" stroke-width="2" mask="url(#path-15-inside-1)"/>
 </g>
-<rect id="Rectangle 9" x="277.203" y="397.991" width="523.622" height="313.416" fill="#7898C7"/>
-<rect id="Rectangle 10" x="277" y="428.45" width="524" height="283" fill="#365C95"/>
-<g id="small_window">
-<rect id="Rectangle 12" x="622.812" y="474.688" width="126.881" height="214.941" fill="#443947"/>
-<rect id="Rectangle 14" x="622.812" y="474.688" width="126.881" height="15.15" fill="#565759"/>
-<circle id="Ellipse 6" cx="634.175" cy="482.263" r="4.73438" fill="#C05F1F"/>
-<circle id="Ellipse 7" cx="646.484" cy="482.263" r="4.73438" fill="#FFE16B"/>
-<circle id="Ellipse 8" cx="658.794" cy="482.263" r="4.73438" fill="#6EC3B3"/>
-<g id="short_code">
-<rect id="Rectangle 30" x="670.156" y="529.606" width="24.6187" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
-<rect id="Rectangle 31" x="670.156" y="540.022" width="36.9281" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
-<rect id="Rectangle 32" x="670.156" y="552.331" width="36.9281" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
-<rect id="Rectangle 33" x="682.466" y="563.694" width="36.9281" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
-<rect id="Rectangle 39" x="671.103" y="563.694" width="7.575" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
-<rect id="Rectangle 42" x="655.953" y="529.606" width="7.575" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
-<rect id="Rectangle 43" x="655.953" y="540.022" width="7.575" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
-<rect id="Rectangle 44" x="655.953" y="552.331" width="7.575" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
-<rect id="Rectangle 40" x="671.103" y="576.003" width="7.575" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
-<rect id="Rectangle 41" x="671.103" y="589.259" width="7.575" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
-<rect id="Rectangle 34" x="682.466" y="576.003" width="36.9281" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
-<rect id="Rectangle 35" x="682.466" y="589.259" width="36.9281" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
-<rect id="Rectangle 36" x="655.006" y="598.728" width="64.3875" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
-<rect id="Rectangle 37" x="655.006" y="611.038" width="64.3875" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
-<rect id="Rectangle 38" x="655.006" y="622.4" width="64.3875" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<g id="Group 28">
+<rect id="Rectangle 9" x="276.203" y="398" width="523.622" height="313.416" fill="#7898C7"/>
+<rect id="Rectangle 10" x="276" y="428.459" width="524" height="283" fill="#365C95"/>
+<circle id="Ellipse 2" cx="294.667" cy="413.623" r="7.10156" fill="#365C95"/>
 </g>
-</g>
-<circle id="Ellipse 2" cx="295.667" cy="413.614" r="7.10156" fill="#365C95"/>
 <g id="big_window">
-<rect id="Rectangle 11" x="294.247" y="449.122" width="313.416" height="243.347" fill="#42494F"/>
-<rect id="Rectangle 13" x="294.247" y="449.122" width="313.416" height="15.15" fill="#565759"/>
+<rect id="Rectangle 11" x="294" y="465" width="313.416" height="243.347" fill="#42494F"/>
+<rect id="Rectangle 13" x="294" y="465" width="313.416" height="15.15" fill="#565759"/>
 <g id="desktop_code">
-<rect id="code1" x="321.706" y="510.669" width="72.9094" height="5.68125" rx="1" fill="#FFC86B"/>
-<rect id="code4" x="321.706" y="545.703" width="106.05" height="5.68125" rx="1" fill="#E28243"/>
-<rect id="code5" x="440.066" y="545.703" width="49.2375" height="5.68125" rx="1" fill="#FFC86B"/>
-<rect id="code8" x="431.544" y="561.8" width="71.9625" height="5.68125" rx="1" fill="#E28243"/>
-<rect id="code6" x="334.016" y="561.8" width="56.8125" height="5.68125" rx="1" fill="#2B907D"/>
-<rect id="code9" x="321.706" y="578.844" width="35.9813" height="5.68125" rx="1" fill="#E28243"/>
-<rect id="code10" x="366.209" y="578.844" width="17.9906" height="5.68125" rx="1" fill="#FFC86B"/>
-<rect id="code11" x="396.509" y="578.844" width="106.997" height="5.68125" rx="1" fill="#2B907D"/>
-<rect id="code13" x="431.544" y="594.941" width="89.0062" height="5.68125" rx="1" fill="#E28243"/>
-<rect id="code12" x="321.706" y="594.941" width="95.6344" height="5.68125" rx="1" fill="#FFC86B"/>
-<rect id="code14" x="321.706" y="612.931" width="72.9094" height="5.68125" rx="1" fill="#2B907D"/>
-<rect id="code15" x="408.819" y="612.931" width="72.9094" height="5.68125" rx="1" fill="#FFC86B"/>
-<rect id="code7" x="399.35" y="561.8" width="17.9906" height="5.68125" rx="1" fill="#FFC86B"/>
-<rect id="code2" x="321.706" y="528.659" width="40.7156" height="5.68125" rx="1" fill="#2B907D"/>
-<rect id="code3" x="371.891" y="528.659" width="18.9375" height="5.68125" rx="1" fill="#2B907D"/>
+<rect id="code1" x="321.459" y="526.547" width="72.9094" height="5.68125" rx="1" fill="#FFC86B"/>
+<rect id="code4" x="321.459" y="561.581" width="106.05" height="5.68125" rx="1" fill="#E28243"/>
+<rect id="code5" x="439.819" y="561.581" width="49.2375" height="5.68125" rx="1" fill="#FFC86B"/>
+<rect id="code8" x="431.297" y="577.678" width="71.9625" height="5.68125" rx="1" fill="#E28243"/>
+<rect id="code6" x="333.769" y="577.678" width="56.8125" height="5.68125" rx="1" fill="#2B907D"/>
+<rect id="code9" x="321.459" y="594.722" width="35.9813" height="5.68125" rx="1" fill="#E28243"/>
+<rect id="code10" x="365.963" y="594.722" width="17.9906" height="5.68125" rx="1" fill="#FFC86B"/>
+<rect id="code11" x="396.263" y="594.722" width="106.997" height="5.68125" rx="1" fill="#2B907D"/>
+<rect id="code13" x="431.297" y="610.819" width="89.0062" height="5.68125" rx="1" fill="#E28243"/>
+<rect id="code12" x="321.459" y="610.819" width="95.6344" height="5.68125" rx="1" fill="#FFC86B"/>
+<rect id="code14" x="321.459" y="628.809" width="72.9094" height="5.68125" rx="1" fill="#2B907D"/>
+<rect id="code15" x="408.572" y="628.809" width="72.9094" height="5.68125" rx="1" fill="#FFC86B"/>
+<rect id="code7" x="399.103" y="577.678" width="17.9906" height="5.68125" rx="1" fill="#FFC86B"/>
+<rect id="code2" x="321.459" y="544.537" width="40.7156" height="5.68125" rx="1" fill="#2B907D"/>
+<rect id="code3" x="371.644" y="544.537" width="18.9375" height="5.68125" rx="1" fill="#2B907D"/>
 </g>
-<circle id="Ellipse 3" cx="307.503" cy="456.697" r="4.73438" fill="#C05F1F"/>
-<circle id="Ellipse 4" cx="319.812" cy="456.697" r="4.73438" fill="#FFE16B"/>
-<circle id="Ellipse 5" cx="332.122" cy="456.697" r="4.73438" fill="#6EC3B3"/>
+<circle id="Ellipse 3" cx="307.256" cy="472.575" r="4.73438" fill="#C05F1F"/>
+<circle id="Ellipse 4" cx="319.566" cy="472.575" r="4.73438" fill="#FFE16B"/>
+<circle id="Ellipse 5" cx="331.875" cy="472.575" r="4.73438" fill="#6EC3B3"/>
 </g>
 <path id="Rectangle 45" d="M265 724H814.188V740.981C814.188 751.475 805.681 759.981 795.188 759.981H284C273.507 759.981 265 751.475 265 740.981V724Z" fill="#EDECE8"/>
+<g id="small_window">
+<rect id="Rectangle 12" x="651" y="448" width="126.881" height="214.941" fill="#42494F"/>
+<rect id="Rectangle 14" x="651" y="448" width="126.881" height="15.15" fill="#565759"/>
+<circle id="Ellipse 6" cx="662.363" cy="455.575" r="4.73438" fill="#C05F1F"/>
+<circle id="Ellipse 7" cx="674.672" cy="455.575" r="4.73438" fill="#FFE16B"/>
+<circle id="Ellipse 8" cx="686.981" cy="455.575" r="4.73438" fill="#6EC3B3"/>
+<g id="short_code">
+<rect id="Rectangle 30" x="698.344" y="502.919" width="24.6187" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<rect id="Rectangle 31" x="698.344" y="513.334" width="36.9281" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<rect id="Rectangle 32" x="698.344" y="525.644" width="36.9281" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<rect id="Rectangle 33" x="710.653" y="537.006" width="36.9281" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<rect id="Rectangle 39" x="699.291" y="537.006" width="7.575" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<rect id="Rectangle 42" x="684.141" y="502.919" width="7.575" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<rect id="Rectangle 43" x="684.141" y="513.334" width="7.575" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<rect id="Rectangle 44" x="684.141" y="525.644" width="7.575" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<rect id="Rectangle 40" x="699.291" y="549.316" width="7.575" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<rect id="Rectangle 41" x="699.291" y="562.572" width="7.575" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<rect id="Rectangle 34" x="710.653" y="549.316" width="36.9281" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<rect id="Rectangle 35" x="710.653" y="562.572" width="36.9281" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<rect id="Rectangle 36" x="683.194" y="572.041" width="64.3875" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<rect id="Rectangle 37" x="683.194" y="584.35" width="64.3875" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+<rect id="Rectangle 38" x="683.194" y="595.713" width="64.3875" height="5.68125" rx="1" fill="#FFF1BA" fill-opacity="0.8"/>
+</g>
+</g>
 </g>
 <g id="burak">
 <path id="neck" d="M470.38 587.791C470.38 582.655 466.644 554.202 464.511 540.606L575.38 530.756C575.291 535.466 572.167 543.557 572.38 546.756C572.647 550.755 568.38 578.791 569.88 587.791C572.163 601.487 575.408 604.852 578.607 610.717C581.166 615.408 587.315 617.825 590.07 618.447C590.781 622.18 589.217 630.497 577.274 633.909C562.346 638.174 543.152 638.707 530.09 637.108C519.64 635.828 476.152 628.577 455.714 625.112C456.603 623.068 458.38 620.256 461.312 615.782C463.691 612.152 462.615 613.82 466.88 604.756C468.484 601.348 470.38 595.256 470.38 587.791Z" fill="#F4AE96"/>
@@ -101,7 +103,7 @@
 </g>
 <g id="clouds">
 <path id="cloud1" d="M629.65 40.7486C593.537 42.0486 574.836 60.7912 570 70H915C900.813 53.0993 868.248 55.3742 853.738 58.6243C842.131 32.623 808.061 31.5397 792.477 34.2483C720.252 -30.7549 653.832 11.4971 629.65 40.7486Z" fill="#FFE6BA" fill-opacity="0.55"/>
-<path id="cloud2" d="M114.322 97.9419C89.3056 98.8334 76.3505 111.685 73 118H312C302.172 106.411 279.612 107.971 269.561 110.199C261.52 92.3701 237.917 91.6272 227.122 93.4845C177.088 48.9109 131.075 77.8838 114.322 97.9419Z" fill="#FFE6BA" fill-opacity="0.55"/>
+<path id="cloud2" d="M219.322 124.942C194.306 125.833 181.35 138.685 178 145H417C407.172 133.411 384.612 134.971 374.561 137.199C366.52 119.37 342.917 118.627 332.122 120.485C282.088 75.9109 236.075 104.884 219.322 124.942Z" fill="#FFE6BA" fill-opacity="0.55"/>
 <path id="cloud3" d="M556.799 206.046C540.575 206.622 532.173 214.922 530 219H685C678.626 211.515 663.995 212.523 657.477 213.962C652.262 202.447 636.955 201.968 629.953 203.167C597.505 174.38 567.664 193.092 556.799 206.046Z" fill="#FFE6BA" fill-opacity="0.55"/>
 </g>
 </g>

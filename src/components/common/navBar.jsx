@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 class Navbar extends React.Component {
-  state = { width: 1080, height: 0 };
+  state = { width: window.innerWidth };
 
   updateDimensions = () => {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    this.setState({ width: window.innerWidth });
   };
   componentDidMount() {
     window.addEventListener("resize", this.updateDimensions);
@@ -17,20 +17,21 @@ class Navbar extends React.Component {
   }
 
   render() {
+    const wrapper =
+      this.state.width > 769 ? "wrapperVertical" : "wrapperHorizantal";
     const classNav =
       this.state.width > 769
         ? "flex-column navBarLeft navBarLeftAlign"
         : "justify-content-center navBarTop";
     return (
-      <div className="wrapper">
+      <div className={wrapper}>
         <Nav defaultActiveKey="/" className={classNav}>
           <Link to="/about">
             <i className="fas fa-user"></i>
           </Link>
 
-          <Link to="/portfolio" className="navBarTop">
-            <i className="fas fa-chevron-left"></i>
-            <i className="fas fa-chevron-right"></i>
+          <Link to="/portfolio">
+            <i class="far fa-code"></i>
           </Link>
 
           <Link to="/resume">

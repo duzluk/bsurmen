@@ -23,22 +23,32 @@ a.nav-link {
   padding: 15px;
 }
 
-.wrapper {
+.wrapperVertical {
   min-height: 100vh;
   max-height: 100%;
 }
 
-.wrapper .nav {
+.wrapperVertical .nav {
   padding-top: 74vh;
 }
 
-/* .navBarTop, .navBarTop i {
-  display: flex;
+.wrapperHorizantal {
+  min-width: 100%;
+}
+
+
+.navBarTop, .navBarTop i {
   background: #2f292d;
   color: #ffc86b;
-  overflow: auto;
-  width: 100%;
-} */
+}
+
+.navBarTop i {
+  padding: 15px;
+}
+
+.navBarLeftAlign {
+  display: flex;
+}
 
 i {
   color: #2f292d;

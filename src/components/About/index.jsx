@@ -10,21 +10,23 @@ const About = () => {
     <Container fluid>
       <Row>
         <NavBar />
-        <Col xs={12} md={6}>
-          <h1>About Page</h1>
-
-          <BackArrow />
-          <p>
-            Front end web developer familiar with JavaScript frameworks.
-            Studying design gave me a good understanding with learning new
-            concepts and thinking methodologically, a skill that translates
-            beautifully to writing code. I am excited to connect people through
-            technology after having experience connecting people through design.
-          </p>
-        </Col>
-
-        <Col xs={12} md={5}>
-          <AboutImage />
+        <Col>
+          <Row>
+            <Col xs={12} md={6}>
+              <h1>About</h1>
+              <p>
+                Front end web developer familiar with JavaScript frameworks.
+                Studying design gave me a good understanding with learning new
+                concepts and thinking methodologically, a skill that translates
+                beautifully to writing code. I am excited to connect people
+                through technology after having experience connecting people
+                through design.
+              </p>
+            </Col>
+            <Col xs={12} md={6}>
+              <AboutImage />
+            </Col>
+          </Row>
         </Col>
       </Row>
     </Container>

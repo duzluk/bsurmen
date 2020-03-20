@@ -8,15 +8,14 @@ import NavBar from "./../common/navBar";
 import Employment from "./employment";
 import "./style.css";
 
-const Resume = props => {
+const Resume = () => {
   return (
     <Container fluid>
       <Row>
         <NavBar />
         <Col>
           <Row>
-            <h1>Resume Page</h1>
-            <BackArrow />
+            <h1>Resume</h1>
           </Row>
           <Tabs
             tabName1="Education"

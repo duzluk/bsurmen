@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const BackArrow = () => {
+const BackArrow = ({backarrowWrapper}) => {
   return (
-    <Link to="/">
-      <i className="fas fa-arrow-left"></i>
-    </Link>
+    <div className={backarrowWrapper}>
+      <Link to="/">
+        <i className="fas fa-arrow-left"></i>
+      </Link>
+    </div>
   );
 };
 

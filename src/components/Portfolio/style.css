@@ -9,3 +9,9 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+
+.projectCenter {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  padding-left: 15vw;
+}

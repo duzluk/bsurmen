@@ -26,20 +26,24 @@ class Navbar extends React.Component {
     return (
       <div className={wrapper}>
         <Nav defaultActiveKey="/" className={classNav}>
+          <Link to="/">
+            <i class="fal fa-long-arrow-left"></i>
+          </Link>
+
           <Link to="/about">
-            <i className="fas fa-user"></i>
+            <i class="fal fa-address-card"></i>
           </Link>
 
           <Link to="/portfolio">
-            <i class="far fa-code"></i>
+            <i class="fal fa-code"></i>
           </Link>
 
           <Link to="/resume">
-            <i className="fas fa-file-user"></i>
+            <i class="fal fa-file-user"></i>
           </Link>
 
           <Link to="/contact">
-            <i className="fas fa-envelope"></i>
+            <i class="fal fa-envelope"></i>
           </Link>
         </Nav>
       </div>

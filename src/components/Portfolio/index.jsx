@@ -18,7 +18,7 @@ const Portfolio = props => {
   const data = [
     {
       name: "Client Project",
-      url: "/assets/mentees.png",
+      url: "/assets/client.png",
       web: "https://osamaakb.github.io/mentorship/",
       code: "https://github.com/bsurmen/mentorship",
       text: `Brings mentors and mentees together to learn and teach each other.\n
@@ -61,9 +61,12 @@ const Portfolio = props => {
   return (
     <Container fluid>
       <Row>
-          <NavBar />
-        <Col>
-          <Row>
+        <NavBar />
+        <Col >
+          <Row className="projectAlign">
+            <h1>Projects</h1>
+          </Row>
+          <Row className="projectCenter">
             {data.map((e, i) => (
               <PortCard
                 src={data[i].url}
@@ -83,10 +86,6 @@ const Portfolio = props => {
             />
           </Row>
         </Col>
-        {/* <Row>
-          <h1>Portfolio Page</h1>
-          <BackArrow />
-        </Row> */}
       </Row>
     </Container>
   );

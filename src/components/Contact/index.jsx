@@ -55,10 +55,10 @@ class Contact extends Component {
         <Row>
           <NavBar />
 
-          <Col lg={5} xs={11}>
+          <Col md={5} xs={11}>
             <ContactImage />
           </Col>
-          <Col lg={6} xs={11}>
+          <Col md={6} xs={11}>
             <Form
               handleName={this.handleName}
               handleMail={this.handleMail}
@@ -74,7 +74,6 @@ class Contact extends Component {
               radio={this.state.radio}
             />
           </Col>
-          <BackArrow />
         </Row>
       </Container>
     );

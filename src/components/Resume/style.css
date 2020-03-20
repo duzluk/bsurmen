@@ -93,3 +93,13 @@
   background-color: #2f292d !important;
   border-color: white !important;
 }
+
+
+.resumetAlign {
+  justify-content: space-between;
+}
+
+.resumeAlign i {
+  padding: 10px;
+  font-size: 50px;
+}

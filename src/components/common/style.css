@@ -29,13 +29,12 @@ a.nav-link {
 }
 
 .wrapperVertical .nav {
-  padding-top: 74vh;
+  padding-top: 70vh;
 }
 
 .wrapperHorizantal {
   min-width: 100%;
 }
-
 
 .navBarTop, .navBarTop i {
   background: #2f292d;
@@ -52,6 +51,21 @@ a.nav-link {
 
 i {
   color: #2f292d;
+}
+
+.container:hover i {
+  opacity: 0;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 /*----- form ------*/

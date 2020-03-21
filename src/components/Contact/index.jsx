@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Form from "../common/form";
-import BackArrow from "../common/backArrow";
+import Animate from "./animate";
 import ContactImage from "./contactImage";
 import NavBar from "./../common/navBar";
+
 import "./style.css";
 
 class Contact extends Component {

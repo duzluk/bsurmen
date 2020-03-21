@@ -16,7 +16,7 @@ export default function customModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <img src={props.img} />
+        <img src={props.img} className="modalImg"/>
         <p className="new-line ">{props.text}</p>
       </Modal.Body>
       <Modal.Footer>

@@ -1,3 +1,5 @@
+/*----- technical -----*/
+
 .logoCard {
   background: #ffc86b;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -19,9 +21,12 @@
   -webkit-filter: grayscale(1);
 }
 
+
 .logoCard img:hover {
   filter: none;
 }
+
+/*----- employment -----*/
 
 .empCard:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -58,6 +63,8 @@
   transform: translate(-50%, -50%);
 }
 
+/*---- education ------*/
+
 .imgOverlayEdu {
   margin: 0;
   width: 30%;
@@ -93,7 +100,6 @@
   background-color: #2f292d !important;
   border-color: white !important;
 }
-
 
 .resumetAlign {
   justify-content: space-between;

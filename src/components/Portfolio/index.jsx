@@ -1,7 +1,6 @@
 import React, { PropTypes } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import CustomModal from "../common/modal";
-import BackArrow from "../common/backArrow";
 import NavBar from "./../common/navBar";
 import PortCard from "../common/customCard";
 import "./style.css";
@@ -62,7 +61,7 @@ const Portfolio = props => {
     <Container fluid>
       <Row>
         <NavBar />
-        <Col >
+        <Col>
           <Row className="projectAlign">
             <h1>Projects</h1>
           </Row>

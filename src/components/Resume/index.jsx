@@ -14,7 +14,7 @@ const Resume = () => {
       <Row>
         <NavBar />
         <Col>
-          <Row style={{ margin: "2rem 2rem" }}>
+          <Row style={{ margin: "2rem 1rem" }}>
             <h2>resume</h2>
           </Row>
           <Tabs

@@ -52,14 +52,14 @@ class Contact extends Component {
   };
   render() {
     return (
-      <Container fluid className="wrapper">
+      <Container fluid>
         <Row>
           <NavBar />
 
           <Col md={5} xs={11}>
             <ContactImage />
           </Col>
-          <Col md={6} xs={11}>
+          <Col md={6} xs={11} className="contact">
             <Form
               handleName={this.handleName}
               handleMail={this.handleMail}

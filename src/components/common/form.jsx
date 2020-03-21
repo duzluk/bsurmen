@@ -17,7 +17,6 @@ const contactForm = ({
   msg,
   radio
 }) => {
-
   const handleNameInput = event => {
     handleName(event.target.value);
   };
@@ -30,16 +29,16 @@ const contactForm = ({
   const handleBudgetInput = event => {
     handleBudget(event.target.value);
   };
-    const handleMsgInput = event => {
-      handleMsg(event.target.value);
-    };
-     const handleRadioInput = event => {
-       handleRadio(event);
-     };
+  const handleMsgInput = event => {
+    handleMsg(event.target.value);
+  };
+  const handleRadioInput = event => {
+    handleRadio(event);
+  };
   const handleSubmit = event => {
     event.preventDefault();
 
-    alert(`dsf`)
+    alert(`dsf`);
   };
 
   return (
@@ -87,7 +86,7 @@ const contactForm = ({
           </div>
         </RadioGroup>
 
-        <Row>
+        <Row style={{ marginTop: "2rem" }}>
           <Col>
             <Form.Label>What is your timeframe?</Form.Label>
             <Form.Control
@@ -120,10 +119,12 @@ const contactForm = ({
             onChange={msg => handleMsgInput(msg)}
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="danger" type="submit">
           Send it
         </Button>
-        <Form.Label>Are you done? Click the button!</Form.Label>
+        <Form.Label style={{ marginLeft: "2rem" }}>
+          Are you done? Click the button!
+        </Form.Label>
       </Form>
     </React.Fragment>
   );

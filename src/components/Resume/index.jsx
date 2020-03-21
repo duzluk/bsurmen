@@ -14,8 +14,8 @@ const Resume = () => {
       <Row>
         <NavBar />
         <Col>
-          <Row>
-            <h1>Resume</h1>
+          <Row style={{ margin: "2rem 2rem" }}>
+            <h2>resume</h2>
           </Row>
           <Tabs
             tabName1="Education"

@@ -56,7 +56,7 @@ class Home extends React.Component {
         <Row className="home2">
           <NavBar />
           <Col xs={12} md={5}>
-            <div className="home">
+            <div className="home" style ={{ marginLeft: "1rem"}}>
               <h5 style={{ fontWeight: "400" }}>Burak Sürmen</h5>
               <h1 style={{ fontWeight: "600" }}>
                 Front end web application developer

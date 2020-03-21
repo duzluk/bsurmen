@@ -21,7 +21,6 @@
   -webkit-filter: grayscale(1);
 }
 
-
 .logoCard img:hover {
   filter: none;
 }
@@ -51,6 +50,7 @@
 
 .containerOver:hover .overlay {
   opacity: 1;
+  border-radius: 10px;
 }
 
 .imgOverlayStyle {
@@ -94,8 +94,6 @@
   padding: 1rem;
   border-radius: 10px;
 }
-
-
 
 .resumetAlign {
   justify-content: space-between;

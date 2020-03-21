@@ -1,7 +1,7 @@
 import React from "react";
 
 const CustomCard2 = ({
-  src,
+  title,
   classStyle,
   onEnter,
   onClick,
@@ -12,9 +12,13 @@ const CustomCard2 = ({
   return (
     <React.Fragment>
       <div className={classStyle} onMouseEnter={onEnter} onClick={onClick}>
-        <p>{text}</p>
+        <p style={{ fontWeight: "700" }}></p>
+        <p>
+          <strong>{title}</strong>
+          {text}
+        </p>
         <div className="overlay">
-          <img src={srcOverlay} className={imgOverlayStyle}/>
+          <img src={srcOverlay} className={imgOverlayStyle} />
         </div>
       </div>
     </React.Fragment>

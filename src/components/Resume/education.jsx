@@ -3,26 +3,32 @@ import { Row, Col } from "react-bootstrap";
 import EduCard from "../common/customCard2";
 
 const Education = () => {
+  const title = [
+    "Re:Coded Bootcamp (Flatiron School) - 2020",
+    "Anadolu University - Eskisehir, Turkey -  2020 - 2024",
+    "Anadolu University - Eskisehir, Turkey -  2015 - 2017",
+    "Escola Superior de Artes e Design - Porto, Portugal -  2012 - 2013",
+    "Anadolu University - Eskisehir, Turkey -  2010 - 2015"
+  ];
   const eduData = [
-    `Re:Coded Bootcamp (Flatiron School) - 2020\n
+    `\n
 + Front End Web Development, HTML, CSS, JavaScript, React
-5 months long intense web development program run by Re:Coded 
-using Flatiron School curriculum access.\n
+5 months long intense web development program run by Re:Coded using Flatiron School curriculum access.\n
 Applied flip-class system and a lot of team projects during the Bootcamp.
 `,
-    `Anadolu University - Eskisehir, Turkey -  2020 - 2024\n
+    `\n
 + Degree: Management Information Systems
 
 `,
-    `Anadolu University - Eskisehir, Turkey -  2015 - 2017\n
+    `\n
 + Degree: Brand Communication
 
 `,
-    `Escola Superior de Artes e Design - Porto, Portugal -  2012 - 2013\n
+    `\n
 + Degree: Industrial Product Design
 
 `,
-    `Anadolu University - Eskisehir, Turkey -  2010 - 2015\n
+    `\n
 + Degree: Industrial Product Design
 
 `
@@ -42,6 +48,7 @@ Applied flip-class system and a lot of team projects during the Bootcamp.
         <Row>
           {eduData.map((e, i) => (
             <EduCard
+              title={title[i]}
               text={eduData[i]}
               srcOverlay={eduLogo[i]}
               classStyle="new-line empCard containerOver"

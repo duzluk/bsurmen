@@ -14,7 +14,7 @@ const Tabs = ({
   const contents = [content1, content2, content3];
 
   return (
-    <Tab.Container id="left-tabs-example" defaultActiveKey="first" bsStyle="danger" bsClass="custom-btn">
+    <Tab.Container id="left-tabs-example" defaultActiveKey="first">
       <Row>
         <Col sm={12} md={3}>
           <Nav variant="pills" className="flex-column">

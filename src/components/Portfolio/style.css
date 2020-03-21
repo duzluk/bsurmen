@@ -13,10 +13,38 @@
 
 .portfolio:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-animation: slide-top .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: slide-top .5s cubic-bezier(.25, .46, .45, .94) both
 }
 
 .projectCenter {
   margin-top: 15vh;
   margin-bottom: 15vh;
   padding-left: 15vw;
+}
+
+.projectAlign {
+  margin: 2rem 0 0 2rem !important;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px)
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px)
+  }
 }

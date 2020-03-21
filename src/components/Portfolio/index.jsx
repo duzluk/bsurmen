@@ -18,27 +18,21 @@ const Portfolio = props => {
     {
       name: "Client Project",
       url: "/assets/client.png",
-      web: "https://osamaakb.github.io/mentorship/",
-      code: "https://github.com/bsurmen/mentorship",
-      text: `Brings mentors and mentees together to learn and teach each other.\n
-             + Implemented HTML5, CSS3 and Materialize to structure the
-            home page and info modal.\n
-              + Explored Firestore to create database.\n
-             + Completed data fetching part to render user information on
-            the page.\n
-            + Fixed bugs that cause problem of the user experience.`
+      urlModal: "/assets/client2.png",
+      web: "#",
+      code: "#",
+      text: `Content will be ready in soon.`
     },
     {
       name: "Mentees and Mentors",
       web: "https://osamaakb.github.io/mentorship/",
       code: "https://github.com/bsurmen/mentorship",
       url: "/assets/mentees.png",
+      urlModal: "/assets/mentees2.png",
       text: `Brings mentors and mentees together to learn and teach each other.\n
-             + Implemented HTML5, CSS3 and Materialize to structure the
-            home page and info modal.\n
+             + Implemented HTML5, CSS3 and Materialize to structure the home page and info modal.\n
               + Explored Firestore to create database.\n
-             + Completed data fetching part to render user information on
-            the page.\n
+             + Completed data fetching part to render user information on the page.\n
             + Fixed bugs that cause problem of the user experience.`
     },
     {
@@ -46,13 +40,11 @@ const Portfolio = props => {
       web: "https://abbuloka.netlify.com/",
       code: "https://github.com/bsurmen/abbulokapremium",
       url: "/assets/abbulokas.png",
-      text: `An e-commercial website that promotes and sells the Bennu rocks
-            pieces to the people. (This is the first exercise project under web
-            development Bootcamp as a team. Only HTML and CSS used in the
-            project.)\n
+      urlModal: "/assets/abbuloka.png",
+      text: `An e-commercial website that promotes and sells the Bennu rocks pieces to the people. 
+      (This is the first exercise project under web development Bootcamp as a team. Only HTML and CSS used in the project.)\n
             + Devised the project idea and designed UI.\n
-            +Utilized Bootstrap 4 to create responsive page for use on different
-            size of screens.\n
+            +Utilized Bootstrap 4 to create responsive page for use on different size of screens.\n
             + Created index page and footer through HTML5 and CSS3.`
     }
   ];
@@ -63,7 +55,7 @@ const Portfolio = props => {
         <NavBar />
         <Col>
           <Row className="projectAlign">
-            <h1>Projects</h1>
+            <h1>projects</h1>
           </Row>
           <Row className="projectCenter">
             {data.map((e, i) => (
@@ -79,7 +71,7 @@ const Portfolio = props => {
               onHide={() => setModalShow(false)}
               onWeb={data[dataNum].web}
               onCode={data[dataNum].code}
-              img={data[dataNum].url}
+              img={data[dataNum].urlModal}
               text={data[dataNum].text}
               title={data[dataNum].name}
             />

@@ -95,11 +95,7 @@
   border-radius: 10px;
 }
 
-.modal .btn-primary {
-  color: #ffc86b !important;
-  background-color: #2f292d !important;
-  border-color: white !important;
-}
+
 
 .resumetAlign {
   justify-content: space-between;

@@ -55,7 +55,7 @@ const Portfolio = props => {
         <NavBar />
         <Col>
           <Row className="projectAlign">
-            <h1>projects</h1>
+            <h2>projects</h2>
           </Row>
           <Row className="projectCenter">
             {data.map((e, i) => (

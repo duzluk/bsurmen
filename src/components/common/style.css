@@ -94,3 +94,7 @@ a.nav-link {
   background-color: #2f292d;
   border-color: #2f292d !important;
 }
+
+.as .input{
+  background-color: red !important;
+}

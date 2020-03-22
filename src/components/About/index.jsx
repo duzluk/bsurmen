@@ -49,7 +49,7 @@ const About = () => {
           <Col>
             <Row>
               <Col xs={12} md={6}>
-                <h1>about me</h1>
+                <h2>about me</h2>
                 <p>Hey there!</p>
                 <p>
                   My name is Burak. I’m a front end web developer familiar with

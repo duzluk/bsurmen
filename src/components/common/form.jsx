@@ -76,14 +76,14 @@ const contactForm = ({
           onChange={e => handleRadioInput(e)}
           selectedValue={radio}
         >
-          <div className="radio-button-background">
-            <Radio value="radio" className="radio-button" />
-            Have product documentation or work in progress
-          </div>
-          <div className="radio-button-background">
-            <Radio value="radio2" className="radio-button" />
-            Project is already running (I have documentation or mockups etc.)
-          </div>
+          <label>
+            <Radio value="radio" className="radio-button" /> Have product
+            documentation or work in progress
+          </label>
+          <label>
+            <Radio value="radio2" className="radio-button" /> Project is already
+            running (I have documentation or mockups etc.)
+          </label>
         </RadioGroup>
 
         <Row style={{ marginTop: "2rem" }}>

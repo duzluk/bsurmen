@@ -5,7 +5,8 @@ const colors = {
   green: "#E28243",
   orange: "#2B907D"
 };
-class Working extends React.Component {
+
+export default class HomePageAmimate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,8 +15,9 @@ class Working extends React.Component {
       orange: colors.orange
     };
 
+    // Change screen code colors randomly in home page animation.
     this.interval = setInterval(() => {
-      let randomColor =
+      let randomColor1 =
         colors[
           Object.keys(colors)[
             Math.floor(Math.random() * Object.keys(colors).length)
@@ -34,7 +36,7 @@ class Working extends React.Component {
           ]
         ];
       this.setState(() => ({
-        yellow: randomColor,
+        yellow: randomColor1,
         green: randomColor2,
         orange: randomColor3
       }));
@@ -44,11 +46,12 @@ class Working extends React.Component {
   componentWillUnmount() {
     clearInterval(this.interval);
   }
+
   render() {
     return (
       <svg
-        width="991"
-        height="964"
+        width="103%"
+        height="100%"
         viewBox="0 0 991 964"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -630,5 +633,3 @@ class Working extends React.Component {
     );
   }
 }
-
-export default Working;

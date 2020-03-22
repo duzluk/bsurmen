@@ -6,12 +6,13 @@ const calc = (x, y) => [
   (x - window.innerWidth / 2) / 20,
   1.1
 ];
+
 const trans = (x, y, s) =>
-  `perspective(600px) rotateX(${x}deg) rotateY(0) scale(${s})`;
+  `perspective(900px) rotateX(0) rotateY(0) scale(${s})`;
 const CustomCard = ({ src, classStyle, onEnter, onClick, text }) => {
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
-    config: { mass: 50, tension: 650, friction: 250 }
+    config: { mass: 10, tension: 600, friction: 250 }
   }));
 
   return (

@@ -1,0 +1,24 @@
+.project {
+  cursor: pointer;
+}
+
+.project img {
+  border-radius: 30px;
+  height: 22rem;
+  margin: 0 1rem;
+}
+
+.projectCenter {
+  margin: 7% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#projectTitle {
+  margin: 2rem 1rem;
+}
+
+.projectAlign {
+  margin: 2rem 0 0 2rem !important;
+}

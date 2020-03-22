@@ -11,12 +11,13 @@ export default function customModal(props) {
       className="modal"
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter modalTitle">
+        <Modal.Title id="contained-modal-title-vcenter" className="modalTitle">
           {props.title}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <img src={props.img} className="modalImg" />
+        <h6 className="modalTextHeader">{props.header}</h6>
         <p className="new-line modalText">{props.text}</p>
       </Modal.Body>
       <Modal.Footer>

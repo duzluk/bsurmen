@@ -29,14 +29,14 @@ a.nav-link {
 }
 
 .wrapperVertical .nav {
- 
 }
 
 .wrapperHorizantal {
   min-width: 100%;
 }
 
-.navBarTop, .navBarTop i {
+.navBarTop,
+.navBarTop i {
   background: #2f292d;
   color: #ffc86b;
 }
@@ -70,11 +70,19 @@ a.nav-link {
 }
 
 .modalTitle {
-  font-weight: 600;
-  color: white !important;
+  font-weight: 600 !important;
 }
 
-.modal-header, .modal-footer {
+.modalTextHeader {
+  font-weight: 600;
+}
+
+.modal-body h6 {
+  margin-top: 2rem;
+}
+
+.modal-header,
+.modal-footer {
   border: none !important;
 }
 
@@ -95,6 +103,6 @@ a.nav-link {
   border-color: #2f292d !important;
 }
 
-.as .input{
+.as .input {
   background-color: red !important;
 }

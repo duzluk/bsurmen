@@ -49,31 +49,34 @@ class Contact extends Component {
     this.setState({
       radio
     });
+    console.log(radio);
+    
   };
   render() {
     return (
       <Container fluid>
         <Row>
           <NavBar />
-
-          <Col md={5} xs={11}>
-            <ContactImage />
-          </Col>
-          <Col md={6} xs={11} className="contact">
-            <Form
-              handleName={this.handleName}
-              handleMail={this.handleMail}
-              handleTimeFrame={this.handleTimeFrame}
-              handleBudget={this.handleBudget}
-              handleMsg={this.handleMsg}
-              handleRadio={this.handleRadio}
-              name={this.state.name}
-              mail={this.state.mail}
-              timeFrame={this.state.timeFrame}
-              budget={this.state.budget}
-              msg={this.state.msg}
-              radio={this.state.radio}
-            />
+          <Col id="contactAlign">
+            <Col md={5} xs={11}>
+              <ContactImage />
+            </Col>
+            <Col md={6} xs={11}>
+              <Form
+                handleName={this.handleName}
+                handleMail={this.handleMail}
+                handleTimeFrame={this.handleTimeFrame}
+                handleBudget={this.handleBudget}
+                handleMsg={this.handleMsg}
+                handleRadio={this.handleRadio}
+                name={this.state.name}
+                mail={this.state.mail}
+                timeFrame={this.state.timeFrame}
+                budget={this.state.budget}
+                msg={this.state.msg}
+                radio={this.state.radio}
+              />
+            </Col>
           </Col>
         </Row>
       </Container>

@@ -9,7 +9,6 @@ const contactForm = ({
   handleBudget,
   handleMsg,
   handleRadio,
-  handleForm,
   name,
   mail,
   timeFrame,
@@ -37,15 +36,14 @@ const contactForm = ({
   };
   const handleSubmit = event => {
     event.preventDefault();
-
-    alert(`dsf`);
+    console.log(event.target.value);
   };
 
   return (
     <React.Fragment>
       <h1>Need some help?</h1>
       <h1>ping me</h1>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} method="post" action="contact.php">
         <Row>
           <Col>
             <Form.Label>What is your name?</Form.Label>
@@ -77,7 +75,7 @@ const contactForm = ({
           selectedValue={radio}
         >
           <label>
-            <Radio value="radio" className="radio-button" /> Have product
+            <Radio value="radio1" className="radio-button" /> Have product
             documentation or work in progress
           </label>
           <label>

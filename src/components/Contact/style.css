@@ -1,8 +1,6 @@
 .contact {
-  margin-top: 9%;
+  margin: 9% 0;
 }
-
-#big_letter {}
 
 #kare1, #kare3 {
   -webkit-animation: rotate-center 60s linear infinite both;
@@ -55,7 +53,7 @@
   border: none !important;
 }
 
-.form-check-input:checked{
-   background-color: #147B67 !important;
+.form-check-input:checked {
+  background-color: #147B67 !important;
   color: #ffc86b !important;
 }

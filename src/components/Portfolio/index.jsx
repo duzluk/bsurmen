@@ -3,9 +3,12 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import CustomModal from "../common/modal";
 import NavBar from "./../common/navBar";
 import PortCard from "../common/customCard";
+
 import "./style.css";
 
-const Portfolio = props => {
+
+
+const Portfolio = prop => {
   const [modalShow, setModalShow] = React.useState(false);
   const [dataNum, setDataNum] = React.useState(0);
 
@@ -13,6 +16,7 @@ const Portfolio = props => {
     setDataNum(e);
     setModalShow(true);
   };
+
 
   const data = [
     {

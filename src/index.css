@@ -1,4 +1,4 @@
-html{
+html {
   min-height: 100%;
 }
 
@@ -12,6 +12,12 @@ body {
   height: 100%;
 }
 
+<<<<<<< HEAD
 .pageTitle{
   margin: 1rem 2rem;
 }
+=======
+.pageTitle {
+  margin: 2rem 1rem;
+}
+>>>>>>> 89744a5ae3693d4625c9dc4687f32be0f7f7b957

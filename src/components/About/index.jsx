@@ -39,7 +39,7 @@ const About = () => {
 
   return (
     <div onMouseMove={onMove} onScroll={onScroll}>
-      <Container fluid>
+      <Container fluid className="about">
         <Row>
           <NavBar />
           <Col>

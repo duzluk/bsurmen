@@ -106,3 +106,16 @@ a.nav-link {
   background-color: #2f292d;
   border-color: #2f292d !important;
 }
+
+
+.eduColor{
+  width: 50px;
+  height: 5px;
+  background: #2B907D;
+}
+
+.empColor{
+  width: 50px;
+  height: 5px;
+  background: #C05F1F;
+}

@@ -7,11 +7,13 @@ const CustomCard2 = ({
   onClick,
   text,
   srcOverlay,
-  imgOverlayStyle
+  imgOverlayStyle,
+  cardColor
 }) => {
   return (
     <React.Fragment>
       <div className={classStyle} onMouseEnter={onEnter} onClick={onClick}>
+        <div className={cardColor}></div>
         <p style={{ fontWeight: "700" }}></p>
         <p>
           <strong>{title}</strong>

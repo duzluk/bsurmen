@@ -6,33 +6,31 @@ import Technical from "./technical";
 import NavBar from "./../common/navBar";
 import Employment from "./employment";
 import CursorProvider from "../../Providers/cursorProvider";
-
 import "./style.css";
 import BackClouds from "../common/backClouds";
 
 const Resume = () => {
   return (
     <CursorProvider>
-     
-        <Container fluid className="resume">
-          <Row>
-            <NavBar />
-            <Col className="asd">
-              <Row style={{ margin: "2rem 1rem" }}>
-                <h2>resume</h2>
-              </Row>
-              <Tabs
-                tabName1="Education"
-                tabName2="Technical Skills"
-                tabName3="Employment History"
-                content1={<Education />}
-                content2={<Technical />}
-                content3={<Employment />}
-              />
-            </Col>
-          </Row>
-        </Container>
-   
+      <Container fluid className="resume">
+        <Row>
+          <NavBar />
+          <Col className="asd">
+            <Row style={{ margin: "2rem 1rem" }}>
+              <h2>resume</h2>
+            </Row>
+            <Tabs
+              tabName1="Education"
+              tabName2="Technical Skills"
+              tabName3="Employment History"
+              content1={<Education />}
+              content2={<Technical />}
+              content3={<Employment />}
+            />
+          </Col>
+        </Row>
+      </Container>
+  
     </CursorProvider>
   );
 };

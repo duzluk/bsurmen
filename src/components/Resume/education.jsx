@@ -15,6 +15,7 @@ const Education = () => {
               srcOverlay={eduLogo[i]}
               classStyle="new-line empCard containerOver"
               imgOverlayStyle="imgOverlayEdu"
+              cardColor="eduColor"
             />
           ))}
         </Row>

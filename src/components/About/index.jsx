@@ -1,5 +1,6 @@
 import React, { useCallback } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import NavBar from "./../common/navBar";
 import AboutImage from "./aboutImage";
 import Typing, { Backspace, Delay, Reset, Speed } from "react-typing-animation";
@@ -55,45 +56,35 @@ const About = () => {
 
   return (
     <div onMouseMove={onMove} onScroll={onScroll}>
-      <Container fluid>
+      <Container fluid className="about">
         <Row>
           <NavBar />
           <Col>
+            <h2 className="pageTitle">about me</h2>
             <Row>
-              <h2 style={{ margin: "2rem 1rem" }}>about me</h2>
-              <Col style={{ marginTop: "8%" }}>
-                <h4 style={{ fontSize: "40px" }}>Hey there!</h4>
-                <h2
-                  style={{
-                    fontSize: "50px",
-                    fontWeight: "700"
-                  }}
-                >
-                  I'm Burak Sürmen. I’m a front end web developer familiar with
-                  JavaScript frameworks.
-                </h2>
-                <h6 style={{ fontSize: "25px" }}>
+              <Col xs={12} md={5}>
+                <AboutImage  />
+              </Col>
+              <Col xs={12} md={5}>
+                <h4>Hey there!</h4>
+                <h1 className="aboutBold">
+                  I’m a front end web developer familiar with JavaScript
+                  frameworks.
+                </h1>
+                <h6>
                   Studying design gave me a good understanding with learning new
                   concepts and thinking methodologically, a skill that
-                  translates beautifully to writing code.
-                  <br />
-                  <br />I am excited to connect people through technology after
-                  having experience connecting people through design.
+                  translates beautifully to writing code. I am excited to connect
+                  people through technology after having experience connecting
+                  people through design.
                 </h6>
-                <p
-                  style={{
-                    fontSize: "25px",
-                    fontWeight: "700"
-                  }}
-                >
+                <h6 id="aboutContact" className="aboutBold">
                   Interested in working together? <br />
                   Feel free to contact me for any project or collaboration.
-                </p>
-                <Button variant="danger">Contact me</Button>
-              </Col>
-
-              <Col xs={12} md={6}>
-                <AboutImage interpBg={interpBg} interpFace={interpFace} />
+                </h6>
+                <Link to="/contact">
+                  <Button variant="danger">Contact me</Button>
+                </Link>
               </Col>
             </Row>
           </Col>

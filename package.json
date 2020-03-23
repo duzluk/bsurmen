@@ -7,9 +7,16 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.4.1",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
     "is-url-external": "^1.0.3",
     "jquery": "^3.4.1",
     "lodash-es": "^4.17.15",
+    "mailgun-js": "^0.22.0",
+    "nodemailer": "^6.4.6",
+    "nodemailer-mailgun-transport": "^2.0.0",
+    "open": "^7.0.3",
+    "path": "^0.12.7",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.13.0",
@@ -20,7 +27,8 @@
     "react-spring": "^8.0.27",
     "react-typing-animation": "^1.6.2",
     "react-use-gesture": "^7.0.5",
-    "react-with-gesture": "^4.0.8"
+    "react-with-gesture": "^4.0.8",
+    "webpack": "^4.42.0"
   },
   "scripts": {
     "start": "react-scripts start",

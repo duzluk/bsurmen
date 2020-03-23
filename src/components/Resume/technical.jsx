@@ -1,38 +1,20 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import CustomCard from "../common/customCard";
+import { techLogo } from "../../data";
 
-const Technical = props => {
-  const src = [
-    "/assets/logo/js.png",
-    "/assets/logo/dart.png",
-    "/assets/logo/react.png",
-    "/assets/logo/flutter.png",
-    "/assets/logo/html.png",
-    "/assets/logo/css.png",
-    "/assets/logo/git.png",
-    "/assets/logo/firebase.png",
-    "/assets/logo/figma.png",
-    "/assets/logo/xd.png",
-    "/assets/logo/photoshop.png",
-    "/assets/logo/illustrator.png",
-    "/assets/logo/rhino.png"
-  ];
+const Technical = () => {
   return (
     <React.Fragment>
-     <Col xs={8}>
-      <Row>
-       
-          {src.map((e, i) => (
-            <CustomCard src={src[i]} classStyle="logoCard" />
+      <Col xs={8}>
+        <Row>
+          {techLogo.map((e, i) => (
+            <CustomCard src={techLogo[i]} classStyle="logoCard" />
           ))}
-      
-      </Row>
-        </Col>
+        </Row>
+      </Col>
     </React.Fragment>
   );
 };
 
 export default Technical;
-
-

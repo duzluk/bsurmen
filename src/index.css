@@ -1,5 +1,6 @@
 html {
   min-height: 100%;
+  cursor: none;
 }
 
 body {
@@ -12,6 +13,37 @@ body {
   height: 100%;
 }
 
-.pageTitle{
+a {
+  cursor: none;
+}
+
+.pageTitle {
   margin: 1rem 2rem;
 }
+
+.movable {
+  width: 30px;
+  height: 30px;
+  background: #6EC3B3;
+  position: absolute;
+  z-index: 999999999;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: background 0.2s;
+}
+
+.movable.active {
+  background: url("/assets/click_hand.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.movable.active:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

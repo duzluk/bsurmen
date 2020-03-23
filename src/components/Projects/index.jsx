@@ -4,6 +4,7 @@ import CustomModal from "../common/modal";
 import NavBar from "../common/navBar";
 import PortCard from "../common/customCard";
 import { projectData } from "../../data";
+import CursorProvider from "../../Providers/cursorProvider";
 import "./style.css";
 
 const Projects = () => {
@@ -16,35 +17,37 @@ const Projects = () => {
   };
 
   return (
-    <Container fluid>
-      <Row>
-        <NavBar />
-        <Col>
-          <h2 id="projectTitle">projects</h2>
+    <CursorProvider>
+      <Container fluid>
+        <Row>
+          <NavBar />
+          <Col>
+            <h2 id="projectTitle">projects</h2>
 
-          <Row className="projectCenter">
-            {projectData.map((e, i) => (
-              <PortCard
-                src={projectData[i].url}
-                onClick={() => onEnter(i)}
-                classStyle="project"
+            <Row className="projectCenter">
+              {projectData.map((e, i) => (
+                <PortCard
+                  src={projectData[i].url}
+                  onClick={() => onEnter(i)}
+                  classStyle="project"
+                />
+              ))}
+
+              <CustomModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                onWeb={projectData[dataNum].web}
+                onCode={projectData[dataNum].code}
+                img={projectData[dataNum].urlModal}
+                text={projectData[dataNum].text}
+                title={projectData[dataNum].name}
+                header={projectData[dataNum].header}
               />
-            ))}
-
-            <CustomModal
-              show={modalShow}
-              onHide={() => setModalShow(false)}
-              onWeb={projectData[dataNum].web}
-              onCode={projectData[dataNum].code}
-              img={projectData[dataNum].urlModal}
-              text={projectData[dataNum].text}
-              title={projectData[dataNum].name}
-              header={projectData[dataNum].header}
-            />
-          </Row>
-        </Col>
-      </Row>
-    </Container>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
+    </CursorProvider>
   );
 };
 

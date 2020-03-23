@@ -4,6 +4,7 @@ import Form from "../common/form";
 import Animate from "./animate";
 import ContactImage from "./contactImage";
 import NavBar from "./../common/navBar";
+import CursorProvider from "../../Providers/cursorProvider";
 
 import "./style.css";
 
@@ -50,36 +51,37 @@ class Contact extends Component {
       radio
     });
     console.log(radio);
-    
   };
   render() {
     return (
-      <Container fluid>
-        <Row>
-          <NavBar />
-          <Col id="contactAlign">
-            <Col md={5} xs={11}>
-              <ContactImage />
+      <CursorProvider>
+        <Container fluid>
+          <Row>
+            <NavBar />
+            <Col id="contactAlign">
+              <Col md={5} xs={11}>
+                <ContactImage />
+              </Col>
+              <Col md={6} xs={11}>
+                <Form
+                  handleName={this.handleName}
+                  handleMail={this.handleMail}
+                  handleTimeFrame={this.handleTimeFrame}
+                  handleBudget={this.handleBudget}
+                  handleMsg={this.handleMsg}
+                  handleRadio={this.handleRadio}
+                  name={this.state.name}
+                  mail={this.state.mail}
+                  timeFrame={this.state.timeFrame}
+                  budget={this.state.budget}
+                  msg={this.state.msg}
+                  radio={this.state.radio}
+                />
+              </Col>
             </Col>
-            <Col md={6} xs={11}>
-              <Form
-                handleName={this.handleName}
-                handleMail={this.handleMail}
-                handleTimeFrame={this.handleTimeFrame}
-                handleBudget={this.handleBudget}
-                handleMsg={this.handleMsg}
-                handleRadio={this.handleRadio}
-                name={this.state.name}
-                mail={this.state.mail}
-                timeFrame={this.state.timeFrame}
-                budget={this.state.budget}
-                msg={this.state.msg}
-                radio={this.state.radio}
-              />
-            </Col>
-          </Col>
-        </Row>
-      </Container>
+          </Row>
+        </Container>
+      </CursorProvider>
     );
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Nav, Row, Col, Tab } from "react-bootstrap";
+import Button from "../../Button";
 
 const Tabs = ({
   tabName1,
@@ -20,7 +21,11 @@ const Tabs = ({
           <Nav variant="pills" className="flex-column">
             {options.map((e, i) => (
               <Nav.Item className="resume">
-                <Nav.Link eventKey={options[i]}>{tabs[i]}</Nav.Link>
+                <Button>
+                  <Nav.Link eventKey={options[i]} className="font-weight-bold">
+                    {tabs[i]}
+                  </Nav.Link>
+                </Button>
               </Nav.Item>
             ))}
           </Nav>
@@ -28,7 +33,9 @@ const Tabs = ({
         <Col sm={12} md={9}>
           <Tab.Content>
             {options.map((e, i) => (
-              <Tab.Pane eventKey={options[i]}  unmountOnExit={true}>{contents[i]}</Tab.Pane>
+              <Tab.Pane eventKey={options[i]} unmountOnExit={true}>
+                {contents[i]}
+              </Tab.Pane>
             ))}
           </Tab.Content>
         </Col>

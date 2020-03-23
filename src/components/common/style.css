@@ -86,6 +86,10 @@ a.nav-link {
   border: none !important;
 }
 
+.close{
+  cursor: none !important;
+}
+
 .modal-content {
   border-radius: 20px !important;
 }
@@ -101,8 +105,4 @@ a.nav-link {
   color: #ffc86b !important;
   background-color: #2f292d;
   border-color: #2f292d !important;
-}
-
-.as .input {
-  background-color: red !important;
 }

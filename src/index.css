@@ -17,6 +17,10 @@ a {
   cursor: none;
 }
 
+.btn{
+  cursor: none !important;
+}
+
 .pageTitle {
   margin: 1rem 2rem;
 }

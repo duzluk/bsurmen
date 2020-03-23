@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
 import { Radio, RadioGroup } from "react-radio-group";
+import CustomCursor from "../../CustomCursor";
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -71,7 +72,6 @@ class ContactForm extends React.Component {
       // Handle errors here however you like, or use a React error boundary
       .catch(err => console.error("Failed to send feedback. Error: ", err));
   }
-
 
   render() {
     return (
@@ -152,9 +152,11 @@ class ContactForm extends React.Component {
               onChange={this.handleChange}
             />
           </Form.Group>
-          <Button variant="danger" type="submit">
-            Send it
-          </Button>
+          <CustomCursor>
+            <Button variant="danger" type="submit">
+              Send it
+            </Button>
+          </CustomCursor>
           <Form.Label style={{ marginLeft: "2rem" }}>
             Are you done? Click the button!
           </Form.Label>

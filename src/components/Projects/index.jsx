@@ -5,6 +5,7 @@ import NavBar from "../common/navBar";
 import PortCard from "../common/customCard";
 import { projectData } from "../../data";
 import CursorProvider from "../../Providers/cursorProvider";
+import CustomCursor from "../../CustomCursor";
 import "./style.css";
 
 const Projects = () => {
@@ -26,11 +27,13 @@ const Projects = () => {
 
             <Row className="projectCenter">
               {projectData.map((e, i) => (
-                <PortCard
-                  src={projectData[i].url}
-                  onClick={() => onEnter(i)}
-                  classStyle="project"
-                />
+                <CustomCursor>
+                  <PortCard
+                    src={projectData[i].url}
+                    onClick={() => onEnter(i)}
+                    classStyle="project"
+                  />
+                </CustomCursor>
               ))}
 
               <CustomModal

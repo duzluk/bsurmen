@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, Row, Col, Tab } from "react-bootstrap";
-import Button from "../../Button";
+import CustomCursor from "../../CustomCursor";
 
 const Tabs = ({
   tabName1,
@@ -21,11 +21,11 @@ const Tabs = ({
           <Nav variant="pills" className="flex-column">
             {options.map((e, i) => (
               <Nav.Item className="resume">
-                <Button>
+                <CustomCursor>
                   <Nav.Link eventKey={options[i]} className="font-weight-bold">
                     {tabs[i]}
                   </Nav.Link>
-                </Button>
+                </CustomCursor>
               </Nav.Item>
             ))}
           </Nav>

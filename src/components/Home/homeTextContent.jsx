@@ -1,4 +1,6 @@
 import React from "react";
+import CustomCursor from "../../CustomCursor";
+
 import { urlSocialMedia, pathSocialIcon } from "../../data";
 
 const HomeTextContent = () => {
@@ -8,11 +10,13 @@ const HomeTextContent = () => {
       <h1>Front end web application developer</h1>
       <h3>Based in Istanbul</h3>
 
-      {urlSocialMedia.map((e, i) => (
-        <a href={urlSocialMedia[i]}>
-          <img src={pathSocialIcon[i]} />
-        </a>
-      ))}
+      <CustomCursor>
+        {urlSocialMedia.map((e, i) => (
+          <a href={urlSocialMedia[i]}>
+            <img src={pathSocialIcon[i]} />
+          </a>
+        ))}
+      </CustomCursor>
     </div>
   );
 };

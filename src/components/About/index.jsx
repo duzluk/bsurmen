@@ -5,6 +5,7 @@ import NavBar from "./../common/navBar";
 import AboutImage from "./aboutImage";
 import CursorProvider from "../../Providers/cursorProvider";
 import Typing, { Backspace, Delay, Reset, Speed } from "react-typing-animation";
+import CustomCursor from "../../CustomCursor";
 
 import { useSpring, animated as a, interpolate } from "react-spring";
 import "./style.css";
@@ -79,9 +80,11 @@ const About = () => {
                     Interested in working together? <br />
                     Feel free to contact me for any project or collaboration.
                   </h4>
-                  <Link to="/contact">
-                    <Button variant="danger">Contact me</Button>
-                  </Link>
+                  <CustomCursor>
+                    <Link to="/contact">
+                      <Button variant="danger">Contact me</Button>
+                    </Link>
+                  </CustomCursor>
                 </Col>
               </Row>
             </Col>

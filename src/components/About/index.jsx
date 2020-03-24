@@ -4,14 +4,12 @@ import { Link } from "react-router-dom";
 import NavBar from "./../common/navBar";
 import AboutImage from "./aboutImage";
 import CursorProvider from "../../Providers/cursorProvider";
-import Typing, { Backspace, Delay, Reset, Speed } from "react-typing-animation";
 import CustomCursor from "../../CustomCursor";
-
-import { useSpring, animated as a, interpolate } from "react-spring";
+import { useSpring } from "react-spring";
 import "./style.css";
 
 const About = () => {
-  const [{ st, xy }, set] = useSpring(() => ({ st: 0, xy: [0, 0] }));
+  const [{  xy }, set] = useSpring(() => ({ st: 0, xy: [0, 0] }));
   const moveSetting = xy.interpolate(
     (x, y) =>
       `perspective(600px) rotateY(${x / 60}deg) rotateX(${-y /
@@ -25,19 +23,7 @@ const About = () => {
   );
   const onScroll = useCallback(e => set({ st: e.target.scrollTop / 30 }), []);
 
-  const AnimatedTypingComponent = () => (
-    <Typing style={{ height: "30px" }} speed="80">
-      <h5
-        className="font-weight-bold"
-        style={{
-          fontSize: "50px"
-        }}
-      >
-        I'm Burak. I’m a front end web developer familiar with JavaScript
-        frameworks.
-      </h5>
-    </Typing>
-  );
+
 
   return (
     <CursorProvider>

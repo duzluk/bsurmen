@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
-import { Radio, RadioGroup } from "react-radio-group";
 import CustomCursor from "../../CustomCursor";
 import axios from "axios";
 
@@ -11,7 +10,7 @@ const ContactForm = () => {
   const [budget, setBudget] = useState("");
   const [radio, setRadio] = useState("");
   const [msg, setMsg] = useState("");
-  const [validated, setValidated] = useState(false);
+  // const [validated, setValidated] = useState(false);
 
   const handleClick = e => {
     e.preventDefault();
@@ -71,7 +70,7 @@ const ContactForm = () => {
     <React.Fragment>
       <h1>Need some help?</h1>
       <h1>ping me</h1>
-      <Form noValidate validated={validated} onSubmit={handleSubmit}>
+      <Form noValidate onSubmit={handleSubmit}>
         <Row>
           <Col>
             <Form.Group controlId="name">

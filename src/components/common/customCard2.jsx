@@ -20,7 +20,7 @@ const CustomCard2 = ({
           {text}
         </p>
         <div className="overlay">
-          <img src={srcOverlay} className={imgOverlayStyle} />
+          <img src={srcOverlay} className={imgOverlayStyle} alt="logos"/>
         </div>
       </div>
     </React.Fragment>

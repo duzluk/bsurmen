@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";

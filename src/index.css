@@ -17,6 +17,10 @@ a {
   cursor: none;
 }
 
+input:hover, label:hover, textarea:hover{
+  cursor: none;
+}
+
 .btn{
   cursor: none !important;
 }

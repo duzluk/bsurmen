@@ -7,7 +7,6 @@ import NavBar from "./../common/navBar";
 import Employment from "./employment";
 import CursorProvider from "../../Providers/cursorProvider";
 import "./style.css";
-import BackClouds from "../common/backClouds";
 
 const Resume = () => {
   return (

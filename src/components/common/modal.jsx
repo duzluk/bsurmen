@@ -22,7 +22,7 @@ export default function customModal(props) {
         </Modal.Header>
       </CustomCursor>
       <Modal.Body>
-        <img src={props.img} className="modalImg" />
+        <img src={props.img} className="modalImg" alt="project images" />
         <h6 className="modalTextHeader">{props.header}</h6>
         <p className="new-line modalText">{props.text}</p>
       </Modal.Body>

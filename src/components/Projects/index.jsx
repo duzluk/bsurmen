@@ -6,7 +6,6 @@ import PortCard from "../common/customCard";
 import { projectData } from "../../data";
 import CursorProvider from "../../Providers/cursorProvider";
 import CustomCursor from "../../CustomCursor";
-import BackClouds from "../common/backClouds";
 import "./style.css";
 
 const Projects = () => {

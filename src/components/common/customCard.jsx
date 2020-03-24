@@ -23,7 +23,7 @@ const CustomCard = ({ src, classStyle, onEnter, onClick, text }) => {
         style={{ transform: props.xys.interpolate(trans) }}
       >
         <div className={classStyle} onMouseEnter={onEnter} onClick={onClick}>
-          <img src={src} />
+          <img src={src} alt="tech logos"/>
           <p>{text}</p>
         </div>
       </animated.div>

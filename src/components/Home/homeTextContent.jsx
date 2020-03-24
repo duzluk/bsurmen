@@ -13,7 +13,7 @@ const HomeTextContent = () => {
       <CustomCursor>
         {urlSocialMedia.map((e, i) => (
           <a href={urlSocialMedia[i]}>
-            <img src={pathSocialIcon[i]} />
+            <img src={pathSocialIcon[i]} alt="social icons"/>
           </a>
         ))}
       </CustomCursor>

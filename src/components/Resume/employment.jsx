@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import EmpCard from "../common/customCard2";
 import { empTitle, empData, empLogo } from "../../data";
 

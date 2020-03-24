@@ -13,11 +13,7 @@ body {
   height: 100%;
 }
 
-a,
-.btn,
-input:hover,
-label:hover,
-textarea:hover {
+a, .btn, input:hover, label:hover, textarea:hover {
   cursor: none !important;
 }
 
@@ -39,10 +35,9 @@ textarea:hover {
 }
 
 .movable.active {
-  /* background: url("/assets/click_hand.png"); */
-  /* background-size: contain; */
-  /* background-repeat: no-repeat; */
-  background: black;
+  background: url("/assets/cursor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   border-radius: 50%;
   width: 30px;
   height: 30px;

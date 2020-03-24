@@ -13,7 +13,7 @@ const Education = () => {
               title={eduTitle[i]}
               text={eduData[i]}
               srcOverlay={eduLogo[i]}
-              classStyle="new-line empCard containerOver"
+              classStyle="new-line empCard containerOver eduCard"
               imgOverlayStyle="imgOverlayEdu"
               cardColor="eduColor"
             />

@@ -32,8 +32,7 @@ a.nav-link {
   min-width: 100%;
 }
 
-.navBarTop,
-.navBarTop i {
+.navBarTop, .navBarTop i {
   background: #2f292d;
   color: #ffc86b;
 }
@@ -44,6 +43,18 @@ a.nav-link {
 
 .navBarLeftAlign {
   display: flex;
+}
+
+@media only screen and (min-width: 992px) {
+  .navBarLeft {
+    padding-top: 35rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navBarLeft {
+    padding-top: 45rem;
+  }
 }
 
 /*----- form ------*/
@@ -78,8 +89,7 @@ a.nav-link {
   margin-top: 2rem;
 }
 
-.modal-header,
-.modal-footer {
+.modal-header, .modal-footer {
   border: none !important;
 }
 
@@ -108,10 +118,13 @@ a.nav-link {
   width: 50px;
   height: 5px;
   background: #2b907d;
+  border-radius: 6px;
 }
 
 .empColor {
   width: 50px;
   height: 5px;
   background: #c05f1f;
+  border-radius: 6px;
 }
+

@@ -13,17 +13,15 @@ body {
   height: 100%;
 }
 
-a {
-  cursor: none;
-}
-
-input:hover, label:hover, textarea:hover{
-  cursor: none;
-}
-
-.btn{
+a,
+.btn,
+input:hover,
+label:hover,
+textarea:hover {
   cursor: none !important;
 }
+
+
 
 .pageTitle {
   margin: 1rem 2rem;
@@ -32,7 +30,7 @@ input:hover, label:hover, textarea:hover{
 .movable {
   width: 30px;
   height: 30px;
-  background: #6EC3B3;
+  background: #6ec3b3;
   position: absolute;
   z-index: 999999999;
   transform: translate(-50%, -50%);
@@ -54,4 +52,3 @@ input:hover, label:hover, textarea:hover{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-

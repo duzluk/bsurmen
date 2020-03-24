@@ -23,7 +23,7 @@ const Projects = () => {
         <Row>
           <NavBar />
           <Col>
-            <h2 id="projectTitle">projects</h2>
+            <h2 className="pageTitle">projects</h2>
 
             <Row className="projectCenter">
               {projectData.map((e, i) => (

@@ -3,13 +3,14 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import NavBar from "./../common/navBar";
 import AboutImage from "./aboutImage";
+import AboutTextContent from "./aboutTextContent";
 import CursorProvider from "../../Providers/cursorProvider";
 import CustomCursor from "../../CustomCursor";
 import { useSpring } from "react-spring";
 import "./style.css";
 
 const About = () => {
-  const [{  xy }, set] = useSpring(() => ({ st: 0, xy: [0, 0] }));
+  const [{ xy }, set] = useSpring(() => ({ st: 0, xy: [0, 0] }));
   const moveSetting = xy.interpolate(
     (x, y) =>
       `perspective(600px) rotateY(${x / 60}deg) rotateX(${-y /
@@ -22,8 +23,6 @@ const About = () => {
     []
   );
   const onScroll = useCallback(e => set({ st: e.target.scrollTop / 30 }), []);
-
-
 
   return (
     <CursorProvider>
@@ -38,34 +37,7 @@ const About = () => {
                   <AboutImage moveSetting={moveSetting} />
                 </Col>
                 <Col xs={12} md={5}>
-                  <h4 style={{ fontSize: "40px" }}>Hey there!</h4>
-                  <h2
-                    style={{
-                      fontSize: "50px"
-                    }}
-                    className="font-weight-bold"
-                  >
-                    <h5
-                      className="font-weight-bold"
-                      style={{
-                        fontSize: "50px"
-                      }}
-                    >
-                      I'm Burak. I’m a front end web developer familiar with
-                      JavaScript frameworks.
-                    </h5>
-                  </h2>
-                  <h5>
-                    Studying design gave me a good understanding with learning
-                    new concepts and thinking methodologically, a skill that
-                    translates beautifully to writing code.I am excited to
-                    connect people through technology after having experience
-                    connecting people through design.
-                  </h5>
-                  <h4 className="font-weight-bold">
-                    Interested in working together? <br />
-                    Feel free to contact me for any project or collaboration.
-                  </h4>
+                  <AboutTextContent />
                   <CustomCursor>
                     <Link to="/contact">
                       <Button variant="danger">Contact me</Button>

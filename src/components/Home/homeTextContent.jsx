@@ -1,5 +1,5 @@
 import React from "react";
-import CustomCursor from "../../CustomCursor";
+import CustomCursor from "../common/customCursor";
 
 import { urlSocialMedia, pathSocialIcon } from "../../data";
 

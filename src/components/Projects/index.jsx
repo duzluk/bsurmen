@@ -5,7 +5,7 @@ import NavBar from "../common/navBar";
 import PortCard from "../common/customCard";
 import { projectData } from "../../data";
 import CursorProvider from "../../Providers/cursorProvider";
-import CustomCursor from "../../CustomCursor";
+import CustomCursor from "../common/customCursor";
 import "./style.css";
 
 const Projects = () => {

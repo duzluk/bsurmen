@@ -1,10 +1,13 @@
 import React from "react";
+import CursorProvider from "../../Providers/cursorProvider";
 
 const NotFound = () => {
   return (
-    <div>
-      <h1>Not Found</h1>
-    </div>
+    <CursorProvider>
+      <div className="notFound">
+        <h1>The page is not found.</h1>
+      </div>
+    </CursorProvider>
   );
 };
 

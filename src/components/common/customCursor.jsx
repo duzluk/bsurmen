@@ -1,5 +1,5 @@
 import React from "react";
-import withCursor from "./HOCs/withCursor";
+import withCursor from "../../HOCs/withCursor";
 
 const Button = props => {
   const Tag = props.href ? "a" : "a";

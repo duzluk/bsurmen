@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import CustomCursor from "../../CustomCursor";
+import CustomCursor from "../common/customCursor";
 import "./style.css";
 
 class Navbar extends React.Component {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
-import CustomCursor from "../../CustomCursor";
+import CustomCursor from "../common/customCursor";
 import axios from "axios";
 
 const ContactForm = () => {

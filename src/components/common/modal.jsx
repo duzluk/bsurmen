@@ -1,6 +1,6 @@
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
-import CustomCursor from "../../CustomCursor";
+import CustomCursor from "../common/customCursor";
 
 export default function customModal(props) {
   return (

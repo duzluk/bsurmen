@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, Row, Col, Tab } from "react-bootstrap";
-import CustomCursor from "../../CustomCursor";
+import CustomCursor from "./customCursor";
 
 const Tabs = ({
   tabName1,

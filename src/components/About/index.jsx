@@ -5,7 +5,7 @@ import NavBar from "./../common/navBar";
 import AboutImage from "./aboutImage";
 import AboutTextContent from "./aboutTextContent";
 import CursorProvider from "../../Providers/cursorProvider";
-import CustomCursor from "../../CustomCursor";
+import CustomCursor from "../common/customCursor";
 import { useSpring } from "react-spring";
 import "./style.css";
 

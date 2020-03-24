@@ -67,91 +67,107 @@ const ContactForm = () => {
       });
   };
   return (
-    <React.Fragment>
-      <h1>Need some help?</h1>
-      <h1>ping me</h1>
+    <div id="form">
+      <h2 className="font-weight-bold">
+        Need some help? <br /> ping me
+      </h2>
+
       <Form noValidate onSubmit={handleSubmit}>
         <Row>
           <Col>
             <Form.Group controlId="name">
               <Form.Label>What is your name?</Form.Label>
-              <Form.Control
-                className="input"
-                value={name}
-                onChange={handleClick}
-                required
-              />
+              <CustomCursor>
+                <Form.Control
+                  className="input"
+                  value={name}
+                  onChange={handleClick}
+                  required
+                />
+              </CustomCursor>
             </Form.Group>
           </Col>
           <Col>
             <Form.Group controlId="email">
               <Form.Label>Your email</Form.Label>
-              <Form.Control
-                type="email"
-                className="input"
-                value={email}
-                onChange={handleClick}
-                required
-              />
+              <CustomCursor>
+                <Form.Control
+                  type="email"
+                  className="input"
+                  value={email}
+                  onChange={handleClick}
+                  required
+                />
+              </CustomCursor>
             </Form.Group>
           </Col>
         </Row>
-        <h1>project stage</h1>
+        <h4>project stage</h4>
         <Form.Group>
           <Col sm={10}>
-            <Form.Check
-              type="radio"
-              label="Have product
+            <CustomCursor>
+              <Form.Check
+                type="radio"
+                label="Have product
               documentation or work in progres"
-              name="formHorizontalRadios"
-              id="havePro"
-              onClick={handleClick}
-            />
-            <Form.Check
-              type="radio"
-              label="Project is
+                name="formHorizontalRadios"
+                id="havePro"
+                onClick={handleClick}
+              />
+            </CustomCursor>
+            <CustomCursor>
+              <Form.Check
+                type="radio"
+                label="Project is
               already running (I have documentation or mockups etc.)"
-              name="formHorizontalRadios"
-              id="haveDoc"
-              onClick={handleClick}
-            />
+                name="formHorizontalRadios"
+                id="haveDoc"
+                onClick={handleClick}
+              />
+            </CustomCursor>
           </Col>
         </Form.Group>
         <Row style={{ marginTop: "2rem" }}>
           <Col>
             <Form.Group controlId="timeframe">
               <Form.Label>What is your timeframe?</Form.Label>
-              <Form.Control
-                required
-                className="input"
-                value={timeframe}
-                onChange={handleClick}
-              />
+              <CustomCursor>
+                <Form.Control
+                  required
+                  className="input"
+                  value={timeframe}
+                  onChange={handleClick}
+                />
+              </CustomCursor>
             </Form.Group>
           </Col>
           <Col>
             <Form.Group controlId="budget">
               <Form.Label>Estimated budget?</Form.Label>
-              <Form.Control
-                required
-                type="number"
-                className="input"
-                value={budget}
-                onChange={handleClick}
-              />
+              <CustomCursor>
+                <Form.Control
+                  required
+                  type="number"
+                  className="input"
+                  value={budget}
+                  onChange={handleClick}
+                />
+              </CustomCursor>
             </Form.Group>
           </Col>
         </Row>
         <Form.Group controlId="msg">
           <Form.Label>Add quick message here</Form.Label>
-          <Form.Control
-            required
-            as="textarea"
-            rows="3"
-            className="input"
-            value={msg}
-            onChange={handleClick}
-          />
+          <CustomCursor>
+            <Form.Control
+              required
+              as="textarea"
+              rows="3"
+              className="input"
+              value={msg}
+              onChange={handleClick}
+            />
+          </CustomCursor>
         </Form.Group>
         <CustomCursor>
           <Button variant="danger" type="submit" onClick={handleSubmit}>
@@ -162,7 +178,7 @@ const ContactForm = () => {
           Are you done? Click the button!
         </Form.Label>
       </Form>
-    </React.Fragment>
+    </div>
   );
 };
 

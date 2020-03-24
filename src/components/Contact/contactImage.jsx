@@ -9,6 +9,7 @@ const ContactImage = () => {
       viewBox="0 0 667 482"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      id='contactImg'
     >
       <g id="contact_img">
         <path

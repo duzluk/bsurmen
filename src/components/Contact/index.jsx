@@ -14,8 +14,8 @@ const Contact = () => {
         <Row>
           <NavBar />
           <Col id="contactAlign">
-            <Row id="contactAlign2">
-              <Col md={5} xs={12}>
+            <Row>
+              <Col md={6} xs={12}>
                 <ContactImage />
               </Col>
               <Col md={6} xs={12}>

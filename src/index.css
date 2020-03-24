@@ -21,8 +21,6 @@ textarea:hover {
   cursor: none !important;
 }
 
-
-
 .pageTitle {
   margin: 1rem 2rem;
 }
@@ -36,7 +34,8 @@ textarea:hover {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   pointer-events: none;
-  transition: background 0.2s;
+  /* mix-blend-mode: difference;
+  filter: invert(1) grayscale(1) contrast(2); */
 }
 
 .movable.active {
@@ -44,6 +43,8 @@ textarea:hover {
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 5px;
+  width: 30px;
+  height: 30px;
 }
 
 .movable.active:after {

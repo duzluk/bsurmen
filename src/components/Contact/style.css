@@ -6,15 +6,9 @@
   align-items: center;
 }
 
-#contactAlign2 {
-  margin: 0 !important;
-  padding: 0 !important;
-
-}
-
 /*----- contact page animation ----*/
 
-#kare1,
+/* #kare1,
 #kare3 {
   -webkit-animation: rotate-center 60s linear infinite both;
   animation: rotate-center 60s linear infinite both;
@@ -23,7 +17,7 @@
 #kare2 {
   -webkit-animation: rotate-center 60s linear infinite reverse both;
   animation: rotate-center 60s linear infinite reverse both;
-}
+} */
 
 @-webkit-keyframes rotate-center {
   0% {
@@ -69,4 +63,21 @@
 .form-check-input:checked {
   background-color: #147b67 !important;
   color: #ffc86b !important;
+}
+
+#contactImg {
+  padding-right: 8rem;
+}
+
+@media only screen and (max-width: 900px) {
+  #contactImg {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #contactImg,
+  #form {
+    padding: 30px;
+  }
 }

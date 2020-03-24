@@ -22,6 +22,7 @@ const Projects = () => {
       <Container fluid>
         <Row>
           <NavBar />
+          <div className="navFixer"></div>
           <Col>
             <h2 className="pageTitle">projects</h2>
 

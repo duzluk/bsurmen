@@ -14,10 +14,9 @@ const Resume = () => {
       <Container fluid className="resume">
         <Row>
           <NavBar />
-          <Col className="asd">
-            <Row style={{ margin: "2rem 1rem" }}>
-              <h2>resume</h2>
-            </Row>
+          <div className="navFixer"></div>
+          <Col xs={12} md={11}>
+            <h2 className="pageTitle">resume</h2>
             <Tabs
               tabName1="Education"
               tabName2="Technical Skills"
@@ -29,7 +28,6 @@ const Resume = () => {
           </Col>
         </Row>
       </Container>
-  
     </CursorProvider>
   );
 };

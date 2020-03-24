@@ -7,3 +7,12 @@
 .aboutImg {
   margin-top: 5%;
 }
+
+.navFixerC{
+  width: 12px;
+}
+@media only screen and (max-width: 770px) {
+ .navFixerC{
+  width: 0;
+}
+}

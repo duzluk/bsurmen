@@ -68,9 +68,7 @@ const ContactForm = () => {
   };
   return (
     <div id="form">
-      <h2 className="font-weight-bold">
-        Need some help? <br /> ping me
-      </h2>
+      <h2 className="font-weight-bold">Need some help?</h2>
 
       <Form noValidate onSubmit={handleSubmit}>
         <Row>

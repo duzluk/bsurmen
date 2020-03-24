@@ -12,6 +12,7 @@ const Home = () => {
       <Container fluid>
         <Row>
           <NavBar />
+          <div className="navFixer"></div>
           <Col xs={12} md={5}>
             <HomeTextContent />
           </Col>

@@ -16,7 +16,7 @@ const Tabs = ({
 
   return (
     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-      <Row>
+      <Row className="ml-4">
         <Col sm={12} md={3}>
           <Nav variant="pills" className="flex-column">
             {options.map((e, i) => (

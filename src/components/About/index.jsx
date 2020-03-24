@@ -30,8 +30,12 @@ const About = () => {
         <Container fluid className="about">
           <Row>
             <NavBar />
+            <div className="navFixerC"></div>
             <Col>
+            <Col>
+            
               <h2 className="pageTitle">about</h2>
+            </Col>
               <Row className="about">
                 <Col xs={6} md={5} className="aboutImg">
                   <AboutImage moveSetting={moveSetting} />

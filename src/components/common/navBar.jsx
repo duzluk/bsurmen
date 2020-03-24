@@ -18,6 +18,7 @@ class Navbar extends React.Component {
   }
 
   render() {
+  
     const wrapper =
       this.state.width > 769 ? "wrapperVertical" : "wrapperHorizantal";
     const classNav =
@@ -25,35 +26,37 @@ class Navbar extends React.Component {
         ? "flex-column navBarLeft navBarLeftAlign"
         : "justify-content-center navBarTop";
     return (
-      <div className={wrapper}>
-        <Nav defaultActiveKey="/" className={classNav}>
-          <CustomCursor>
-            <Link to="/">
-              <i class="fal fa-long-arrow-left"></i>
-            </Link>
-          </CustomCursor>
-          <CustomCursor>
-            <Link to="/about">
-              <i class="fal fa-address-card"></i>
-            </Link>
-          </CustomCursor>
-          <CustomCursor>
-            <Link to="/portfolio">
-              <i class="fal fa-code"></i>
-            </Link>
-          </CustomCursor>
-          <CustomCursor>
-            <Link to="/resume">
-              <i class="fal fa-file-user"></i>
-            </Link>
-          </CustomCursor>
-          <CustomCursor>
-            <Link to="/contact">
-              <i class="fal fa-envelope"></i>
-            </Link>
-          </CustomCursor>
-        </Nav>
-      </div>
+ 
+        <div className={wrapper}>
+          <Nav defaultActiveKey="/" className={classNav}>
+            <CustomCursor>
+              <Link to="/">
+                <i class="fal fa-long-arrow-left"></i>
+              </Link>
+            </CustomCursor>
+            <CustomCursor>
+              <Link to="/about">
+                <i class="fal fa-address-card"></i>
+              </Link>
+            </CustomCursor>
+            <CustomCursor>
+              <Link to="/portfolio">
+                <i class="fal fa-code"></i>
+              </Link>
+            </CustomCursor>
+            <CustomCursor>
+              <Link to="/resume">
+                <i class="fal fa-file-user"></i>
+              </Link>
+            </CustomCursor>
+            <CustomCursor>
+              <Link to="/contact">
+                <i class="fal fa-envelope"></i>
+              </Link>
+            </CustomCursor>
+          </Nav>
+        </div>
+  
     );
   }
 }

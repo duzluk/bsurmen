@@ -5,12 +5,9 @@
 }
 
 .projectCenter {
-  margin: 7% 0;
+  margin: 8% 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.projectAlign {
-  margin: 2rem 0 0 2rem !important;
-}

@@ -14,21 +14,18 @@ a.nav-link {
 }
 
 .navBarLeft {
-  height: 100%;
-  background: #2f292d;
-  color: #ffc86b;
+  padding-top: 28rem;
 }
 
 .navBarLeft a {
-  padding: 15px;
+  padding: 8px;
 }
 
 .wrapperVertical {
+  background: #2f292d;
   min-height: 100vh;
-  max-height: 100%;
-}
-
-.wrapperVertical .nav {
+  position: fixed;
+  z-index: 9999;
 }
 
 .wrapperHorizantal {
@@ -86,7 +83,7 @@ a.nav-link {
   border: none !important;
 }
 
-.close{
+.close {
   cursor: none !important;
 }
 
@@ -107,15 +104,14 @@ a.nav-link {
   border-color: #2f292d !important;
 }
 
-
-.eduColor{
+.eduColor {
   width: 50px;
   height: 5px;
-  background: #2B907D;
+  background: #2b907d;
 }
 
-.empColor{
+.empColor {
   width: 50px;
   height: 5px;
-  background: #C05F1F;
+  background: #c05f1f;
 }

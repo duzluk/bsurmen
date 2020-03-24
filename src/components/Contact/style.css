@@ -19,6 +19,7 @@
   animation: rotate-center 60s linear infinite reverse both;
 } */
 
+
 @-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
@@ -69,7 +70,7 @@
   padding-right: 8rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
   #contactImg {
     padding-right: 0;
   }

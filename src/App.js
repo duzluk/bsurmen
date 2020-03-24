@@ -10,7 +10,6 @@ import NotFound from "./components/NotFound";
 
 const App = () => {
   return (
-    <div>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
@@ -20,7 +19,6 @@ const App = () => {
         <Route path="/not-found" component={NotFound} />
         <Redirect to="/not-found" />
       </Switch>
-    </div>
   );
 };
 

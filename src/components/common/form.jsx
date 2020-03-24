@@ -1,169 +1,184 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
 import { Radio, RadioGroup } from "react-radio-group";
 import CustomCursor from "../../CustomCursor";
+import axios from "axios";
 
-class ContactForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { feedback: "", name: "Name", email: "email@example.com" };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-  handleChange(event) {
-    this.setState({ feedback: event.target.value });
-  }
-  // handleNameInput = event => {
-  //   this.props.handleName(event.target.value);
-  // };
-  // handleMailInput = event => {
-  //   this.props.handleMail(event.target.value);
-  // };
-  // handleTimeFrameInput = event => {
-  //   this.props.handleTimeFrame(event.target.value);
-  // };
-  // handleBudgetInput = event => {
-  //   this.props.handleBudget(event.target.value);
-  // };
-  // handleMsgInput = event => {
-  //   this.props.handleMsg(event.target.value);
-  // };
-  // handleRadioInput = event => {
-  //   this.props.handleRadio(event);
-  // };
+const ContactForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [timeframe, setTimeframe] = useState("");
+  const [budget, setBudget] = useState("");
+  const [radio, setRadio] = useState("");
+  const [msg, setMsg] = useState("");
+  const [validated, setValidated] = useState(false);
 
-  handleSubmit(event) {
-    event.preventDefault();
+  const handleClick = e => {
+    e.preventDefault();
+    if (e.target.id === "name") {
+      setName(e.target.value);
+    }
+    if (e.target.id === "email") {
+      setEmail(e.target.value);
+    }
+    if (e.target.id === "timeframe") {
+      setTimeframe(e.target.value);
+    }
+    if (e.target.id === "budget") {
+      setBudget(e.target.value);
+    }
+    if (e.target.id === "havePro") {
+      setRadio(
+        e.target.value + "Have product documentation or work in progres"
+      );
+    }
+    if (e.target.id === "haveDoc") {
+      setRadio(
+        e.target.value +
+          "Project is already running (I have documentation or mockups etc.)"
+      );
+    }
+    if (e.target.id === "msg") {
+      setMsg(e.target.value);
+    }
+  };
 
-    const {
-      REACT_APP_EMAILJS_RECEIVER: receiverEmail,
-      REACT_APP_EMAILJS_TEMPLATEID: template,
-      REACT_APP_EMAILJS_USERID: user
-    } = this.props.env;
+  const handleSubmit = e => {
+    e.preventDefault();
 
-    this.sendFeedback(
-      template,
-      this.props.senderEmail,
-      receiverEmail,
-      this.state.feedback,
-      user
-    );
+    console.log("handleSubmit");
+    const dataToSubmit = {
+      name,
+      email,
+      timeframe,
+      budget,
+      radio,
+      msg
+    };
 
-    this.setState({
-      formSubmitted: true
-    });
-  }
+    console.log(dataToSubmit);
 
-  sendFeedback(templateId, senderEmail, receiverEmail, feedback, user) {
-    window.emailjs
-      .send(
-        "default_service", // default email provider in your EmailJS account
-        templateId,
-        {
-          senderEmail,
-          receiverEmail,
-          feedback
-        },
-        user
-      )
-      .then(res => {
-        this.setState({ formEmailSent: true });
+    axios
+      .post("/api/sendEmail", dataToSubmit)
+      .then(function(response) {
+        console.log(response);
       })
-      // Handle errors here however you like, or use a React error boundary
-      .catch(err => console.error("Failed to send feedback. Error: ", err));
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <h1>Need some help?</h1>
-        <h1>ping me</h1>
-        <Form onSubmit={this.handleSubmit}>
-          <Row>
-            <Col>
+      .catch(function(error) {
+        console.log(error);
+      });
+  };
+  return (
+    <React.Fragment>
+      <h1>Need some help?</h1>
+      <h1>ping me</h1>
+      <Form noValidate validated={validated} onSubmit={handleSubmit}>
+        <Row>
+          <Col>
+            <Form.Group controlId="name">
               <Form.Label>What is your name?</Form.Label>
               <Form.Control
                 className="input"
-                value={this.state.feedback}
-                onChange={this.handleChange}
+                value={name}
+                onChange={handleClick}
+                required
               />
-            </Col>
-            <Col>
-              <Form.Group controlId="exampleForm.ControlInput1">
-                <Form.Label>Your email</Form.Label>
-                <Form.Control
-                  type="email"
-                  name="mail"
-                  className="input"
-                  value={this.state.feedback}
-                  onChange={this.handleChange}
-                />
-              </Form.Group>
-            </Col>
-          </Row>
-          <h1>project stage</h1>
-
-          <RadioGroup
-            name="stage"
-            onChange={this.handleChange}
-            value={this.state.feedback}
-            selectedValue={this.props.radio}
-          >
-            <label>
-              <Radio value="radio1" className="radio-button" /> Have product
-              documentation or work in progress
-            </label>
-            <label>
-              <Radio value="radio2" className="radio-button" /> Project is
-              already running (I have documentation or mockups etc.)
-            </label>
-          </RadioGroup>
-
-          <Row style={{ marginTop: "2rem" }}>
-            <Col>
+            </Form.Group>
+          </Col>
+          <Col>
+            <Form.Group controlId="email">
+              <Form.Label>Your email</Form.Label>
+              <Form.Control
+                type="email"
+                className="input"
+                value={email}
+                onChange={handleClick}
+                required
+              />
+            </Form.Group>
+          </Col>
+        </Row>
+        <h1>project stage</h1>
+        <Form.Group>
+          <Col sm={10}>
+            <Form.Check
+              type="radio"
+              label="Have product
+              documentation or work in progres"
+              name="formHorizontalRadios"
+              id="havePro"
+              onClick={handleClick}
+            />
+            <Form.Check
+              type="radio"
+              label="Project is
+              already running (I have documentation or mockups etc.)"
+              name="formHorizontalRadios"
+              id="haveDoc"
+              onClick={handleClick}
+            />
+          </Col>
+        </Form.Group>
+        <Row style={{ marginTop: "2rem" }}>
+          <Col>
+            <Form.Group controlId="timeframe">
               <Form.Label>What is your timeframe?</Form.Label>
               <Form.Control
+                required
                 className="input"
-                name="timeFrame"
-                value={this.state.feedback}
-                onChange={this.handleChange}
+                value={timeframe}
+                onChange={handleClick}
               />
-            </Col>
-            <Col>
-              <Form.Group controlId="exampleForm.ControlInput1">
-                <Form.Label>Estimated budget?</Form.Label>
-                <Form.Control
-                  type="number"
-                  className="input"
-                  value={this.state.feedback}
-                  onChange={this.handleChange}
-                />
-              </Form.Group>
-            </Col>
-          </Row>
-          <Form.Group controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Add quick message here</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows="3"
-              name="msg"
-              className="input"
-              value={this.state.feedback}
-              onChange={this.handleChange}
-            />
-          </Form.Group>
-          <CustomCursor>
-            <Button variant="danger" type="submit">
-              Send it
-            </Button>
-          </CustomCursor>
-          <Form.Label style={{ marginLeft: "2rem" }}>
-            Are you done? Click the button!
-          </Form.Label>
-        </Form>
-      </React.Fragment>
-    );
-  }
-}
+            </Form.Group>
+          </Col>
+          <Col>
+            <Form.Group controlId="budget">
+              <Form.Label>Estimated budget?</Form.Label>
+              <Form.Control
+                required
+                type="number"
+                className="input"
+                value={budget}
+                onChange={handleClick}
+              />
+            </Form.Group>
+          </Col>
+        </Row>
+        <Form.Group controlId="msg">
+          <Form.Label>Add quick message here</Form.Label>
+          <Form.Control
+            required
+            as="textarea"
+            rows="3"
+            className="input"
+            value={msg}
+            onChange={handleClick}
+          />
+        </Form.Group>
+        <CustomCursor>
+          <Button variant="danger" type="submit" onClick={handleSubmit}>
+            Send it
+          </Button>
+        </CustomCursor>
+        <Form.Label style={{ marginLeft: "2rem" }}>
+          Are you done? Click the button!
+        </Form.Label>
+      </Form>
+    </React.Fragment>
+  );
+};
 
 export default ContactForm;
+//  <RadioGroup
+//             onChange={handleClick}
+//             value={radio}
+//             selectedValue={radio}
+//           >
+//             <label>
+//               <Radio value="radio1" className="radio-button" /> Have product
+//               documentation or work in progress
+//             </label>
+//             <label>
+//               <Radio value="radio2" className="radio-button" /> Project is
+//               already running (I have documentation or mockups etc.)
+//             </label>
+//           </RadioGroup>
